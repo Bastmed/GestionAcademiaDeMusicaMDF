@@ -1,0 +1,11 @@
+C:\Users\Franco\source\repos\GestionAcademaDeMusica\bin\Debug\GestionMusica.mdf
+C:\Users\Franco\source\repos\GestionAcademaDeMusica\bin\Debug\GestionMusica_log.ldf
+C:\Users\Franco\source\repos\GestionAcademaDeMusica\bin\Debug\GestionAcademaDeMusica.exe.config
+C:\Users\Franco\source\repos\GestionAcademaDeMusica\bin\Debug\GestionAcademaDeMusica.exe
+C:\Users\Franco\source\repos\GestionAcademaDeMusica\bin\Debug\GestionAcademaDeMusica.pdb
+C:\Users\Franco\source\repos\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.csproj.AssemblyReference.cache
+C:\Users\Franco\source\repos\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.Properties.Resources.resources
+C:\Users\Franco\source\repos\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.csproj.GenerateResource.cache
+C:\Users\Franco\source\repos\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.csproj.CoreCompileInputs.cache
+C:\Users\Franco\source\repos\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.exe
+C:\Users\Franco\source\repos\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.pdb
