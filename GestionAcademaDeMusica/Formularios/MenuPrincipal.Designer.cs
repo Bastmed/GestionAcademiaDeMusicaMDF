@@ -28,12 +28,124 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnAlumnos = new System.Windows.Forms.Button();
+            this.btnInstrumentos = new System.Windows.Forms.Button();
+            this.btnProfesores = new System.Windows.Forms.Button();
+            this.pnlSuperior = new System.Windows.Forms.Panel();
+            this.pnlIzquierdo = new System.Windows.Forms.Panel();
+            this.pnlAlumnos = new System.Windows.Forms.Panel();
+            this.pnlInstrumentos = new System.Windows.Forms.Panel();
+            this.pnlProfesores = new System.Windows.Forms.Panel();
+            this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.pnlIzquierdo.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // btnAlumnos
+            // 
+            this.btnAlumnos.Location = new System.Drawing.Point(16, 23);
+            this.btnAlumnos.Name = "btnAlumnos";
+            this.btnAlumnos.Size = new System.Drawing.Size(93, 23);
+            this.btnAlumnos.TabIndex = 0;
+            this.btnAlumnos.Text = "Alumnos";
+            this.btnAlumnos.UseVisualStyleBackColor = true;
+            this.btnAlumnos.Click += new System.EventHandler(this.btnAlumnos_Click);
+            // 
+            // btnInstrumentos
+            // 
+            this.btnInstrumentos.Location = new System.Drawing.Point(16, 79);
+            this.btnInstrumentos.Name = "btnInstrumentos";
+            this.btnInstrumentos.Size = new System.Drawing.Size(93, 23);
+            this.btnInstrumentos.TabIndex = 1;
+            this.btnInstrumentos.Text = "Instrumentos";
+            this.btnInstrumentos.UseVisualStyleBackColor = true;
+            this.btnInstrumentos.Click += new System.EventHandler(this.btnInstrumentos_Click);
+            // 
+            // btnProfesores
+            // 
+            this.btnProfesores.Location = new System.Drawing.Point(16, 129);
+            this.btnProfesores.Name = "btnProfesores";
+            this.btnProfesores.Size = new System.Drawing.Size(93, 23);
+            this.btnProfesores.TabIndex = 2;
+            this.btnProfesores.Text = "Profesores";
+            this.btnProfesores.UseVisualStyleBackColor = true;
+            this.btnProfesores.Click += new System.EventHandler(this.btnProfesores_Click);
+            // 
+            // pnlSuperior
+            // 
+            this.pnlSuperior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSuperior.Location = new System.Drawing.Point(0, 0);
+            this.pnlSuperior.Name = "pnlSuperior";
+            this.pnlSuperior.Size = new System.Drawing.Size(880, 90);
+            this.pnlSuperior.TabIndex = 3;
+            // 
+            // pnlIzquierdo
+            // 
+            this.pnlIzquierdo.Controls.Add(this.pnlAlumnos);
+            this.pnlIzquierdo.Controls.Add(this.pnlInstrumentos);
+            this.pnlIzquierdo.Controls.Add(this.pnlProfesores);
+            this.pnlIzquierdo.Controls.Add(this.btnInstrumentos);
+            this.pnlIzquierdo.Controls.Add(this.btnAlumnos);
+            this.pnlIzquierdo.Controls.Add(this.btnProfesores);
+            this.pnlIzquierdo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlIzquierdo.Location = new System.Drawing.Point(0, 90);
+            this.pnlIzquierdo.Name = "pnlIzquierdo";
+            this.pnlIzquierdo.Size = new System.Drawing.Size(109, 375);
+            this.pnlIzquierdo.TabIndex = 4;
+            // 
+            // pnlAlumnos
+            // 
+            this.pnlAlumnos.Location = new System.Drawing.Point(0, 23);
+            this.pnlAlumnos.Name = "pnlAlumnos";
+            this.pnlAlumnos.Size = new System.Drawing.Size(10, 23);
+            this.pnlAlumnos.TabIndex = 1;
+            // 
+            // pnlInstrumentos
+            // 
+            this.pnlInstrumentos.Location = new System.Drawing.Point(0, 79);
+            this.pnlInstrumentos.Name = "pnlInstrumentos";
+            this.pnlInstrumentos.Size = new System.Drawing.Size(10, 23);
+            this.pnlInstrumentos.TabIndex = 1;
+            // 
+            // pnlProfesores
+            // 
+            this.pnlProfesores.Location = new System.Drawing.Point(0, 129);
+            this.pnlProfesores.Name = "pnlProfesores";
+            this.pnlProfesores.Size = new System.Drawing.Size(10, 23);
+            this.pnlProfesores.TabIndex = 2;
+            // 
+            // pnlContenedor
+            // 
+            this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContenedor.Location = new System.Drawing.Point(109, 90);
+            this.pnlContenedor.Name = "pnlContenedor";
+            this.pnlContenedor.Size = new System.Drawing.Size(771, 375);
+            this.pnlContenedor.TabIndex = 5;
+            // 
+            // MenuPrincipal
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(880, 465);
+            this.Controls.Add(this.pnlContenedor);
+            this.Controls.Add(this.pnlIzquierdo);
+            this.Controls.Add(this.pnlSuperior);
+            this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
+            this.pnlIzquierdo.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnAlumnos;
+        private System.Windows.Forms.Button btnInstrumentos;
+        private System.Windows.Forms.Button btnProfesores;
+        private System.Windows.Forms.Panel pnlSuperior;
+        private System.Windows.Forms.Panel pnlIzquierdo;
+        private System.Windows.Forms.Panel pnlContenedor;
+        private System.Windows.Forms.Panel pnlAlumnos;
+        private System.Windows.Forms.Panel pnlInstrumentos;
+        private System.Windows.Forms.Panel pnlProfesores;
     }
 }

@@ -1,0 +1,13 @@
+# Base de datos local
+*.mdf
+*.ldf
+*.mdb
+
+# Compilados
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
