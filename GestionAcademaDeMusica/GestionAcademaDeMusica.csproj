@@ -54,6 +54,7 @@
     <Reference Include="System">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -66,6 +67,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\Alumnos\AgregarAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Alumnos\AgregarAlumno.Designer.cs">
+      <DependentUpon>AgregarAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\InicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,11 +90,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GestionMusicaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="logica\Academiarepositorio.cs" />
     <Compile Include="Model\Alumno.cs" />
     <Compile Include="Model\Instrumento.cs" />
     <Compile Include="Model\Profesor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\Alumnos\AgregarAlumno.resx">
+      <DependentUpon>AgregarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\InicioSesion.resx">
       <DependentUpon>InicioSesion.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,7 +157,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="logica\" />
+    <Folder Include="Formularios\Instrumentos\" />
+    <Folder Include="Formularios\Profesores\" />
+    <Folder Include="Formularios\UserControls\" />
     <Folder Include="Res\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
