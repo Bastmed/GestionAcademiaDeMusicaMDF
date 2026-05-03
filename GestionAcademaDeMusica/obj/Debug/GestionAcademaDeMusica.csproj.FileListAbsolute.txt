@@ -9,3 +9,15 @@ C:\Users\Franco\source\repos\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMu
 C:\Users\Franco\source\repos\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.csproj.CoreCompileInputs.cache
 C:\Users\Franco\source\repos\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.exe
 C:\Users\Franco\source\repos\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.pdb
+C:\Users\basti\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\bin\Debug\GestionMusica.mdf
+C:\Users\basti\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\bin\Debug\GestionMusica_log.ldf
+C:\Users\basti\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\bin\Debug\GestionAcademaDeMusica.exe.config
+C:\Users\basti\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\bin\Debug\GestionAcademaDeMusica.exe
+C:\Users\basti\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\bin\Debug\GestionAcademaDeMusica.pdb
+C:\Users\basti\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.csproj.AssemblyReference.cache
+C:\Users\basti\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.Formularios.InicioSesion.resources
+C:\Users\basti\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.Properties.Resources.resources
+C:\Users\basti\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.csproj.GenerateResource.cache
+C:\Users\basti\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.csproj.CoreCompileInputs.cache
+C:\Users\basti\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.exe
+C:\Users\basti\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.pdb
