@@ -11,6 +11,7 @@ namespace GestionAcademaDeMusica
         public UCProfesores()
         {
             InitializeComponent();
+            CargarDatos();
         }
 
         private void UCProfesores_Load(object sender, EventArgs e)
