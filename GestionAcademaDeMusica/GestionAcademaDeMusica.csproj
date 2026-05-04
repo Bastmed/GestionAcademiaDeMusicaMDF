@@ -104,6 +104,18 @@
     <Compile Include="Formularios\MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Profesores\ActualizarProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesores\ActualizarProfesor.Designer.cs">
+      <DependentUpon>ActualizarProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesores\AgregarProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesores\AgregarProfesor.Designer.cs">
+      <DependentUpon>AgregarProfesor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\UserControls\UCAlumnos.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -150,6 +162,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesores\ActualizarProfesor.resx">
+      <DependentUpon>ActualizarProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesores\AgregarProfesor.resx">
+      <DependentUpon>AgregarProfesor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\UserControls\UCAlumnos.resx">
       <DependentUpon>UCAlumnos.cs</DependentUpon>
@@ -217,7 +235,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Formularios\Profesores\" />
     <Folder Include="Res\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

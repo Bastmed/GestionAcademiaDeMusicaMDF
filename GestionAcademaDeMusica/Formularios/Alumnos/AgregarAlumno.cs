@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GestionAcademaDeMusica.Formularios.Alumnos
@@ -13,9 +7,14 @@ namespace GestionAcademaDeMusica.Formularios.Alumnos
     public partial class AgregarAlumno : Form
     {
         private AcademiaRepositorio _repo = new AcademiaRepositorio();
+
         public AgregarAlumno()
         {
             InitializeComponent();
+
+            cmbInstrumentoAlumno.DisplayMember = "NombreInstrumento";
+            cmbInstrumentoAlumno.ValueMember = "IdInstrumento";
+            cmbInstrumentoAlumno.DataSource = _repo.ObtenerInstrumentos();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -26,6 +25,10 @@ namespace GestionAcademaDeMusica.Formularios.Alumnos
                 return;
             }
 
+            int? idInstrumento = null;
+            if (cmbInstrumentoAlumno.SelectedValue != null)
+                idInstrumento = (int)cmbInstrumentoAlumno.SelectedValue;
+
             Alumno nuevoAlumno = new Alumno
             {
                 NombreAlumno = txtNombreAlumno.Text.Trim(),
@@ -34,14 +37,12 @@ namespace GestionAcademaDeMusica.Formularios.Alumnos
                 TelefonoAlumno = txtTelefonoAlumno.Text.Trim(),
                 EmailAlumno = txtEmailAlumno.Text.Trim(),
                 ActivoAlumno = chkEstadoAlumno.Checked,
-                IdInstrumento = null
-
+                IdInstrumento = idInstrumento
             };
 
             _repo.AgregarAlumno(nuevoAlumno);
             MessageBox.Show("Alumno agregado exitosamente.");
             this.Close();
         }
-
     }
 }
