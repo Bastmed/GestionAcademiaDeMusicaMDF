@@ -12,12 +12,10 @@ namespace GestionAcademaDeMusica
         public string EmailAlumno { get; set; }
         public bool ActivoAlumno { get; set; }
         public int? IdInstrumento { get; set; }
-        public string NombreInstrumento { get; set; }
 
         public Alumno()
         {
             ActivoAlumno = true;
-            NombreInstrumento = "";
         }
     }
 }

@@ -68,6 +68,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\Alumnos\ActualizarAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Alumnos\ActualizarAlumno.Designer.cs">
+      <DependentUpon>ActualizarAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Alumnos\AgregarAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     <Compile Include="Formularios\UserControls\UCProfesores.Designer.cs">
       <DependentUpon>UCProfesores.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Formularios\Alumnos\ActualizarAlumno.resx">
+      <DependentUpon>ActualizarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Alumnos\AgregarAlumno.resx">
       <DependentUpon>AgregarAlumno.cs</DependentUpon>
     </EmbeddedResource>

@@ -124,7 +124,7 @@ namespace GestionAcademaDeMusica
                 try
                 {
                     con.Open();
-                    string query = "SELECT IdAlumno, NombreAlumno, ApellidoAlumno, FechaNacimiento, TelefonoAlumno, EmailAlumno, ActivoAlumno, IdInstrumento, NombreInstrumento FROM Alumnos";
+                    string query = "SELECT IdAlumno, NombreAlumno, ApellidoAlumno, FechaNacimiento, TelefonoAlumno, EmailAlumno, ActivoAlumno, IdInstrumento FROM Alumnos";
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {
@@ -139,8 +139,7 @@ namespace GestionAcademaDeMusica
                                 TelefonoAlumno = reader["TelefonoAlumno"].ToString(),
                                 EmailAlumno = reader["EmailAlumno"].ToString(),
                                 ActivoAlumno = (bool)reader["ActivoAlumno"],
-                                IdInstrumento = reader["IdInstrumento"] == DBNull.Value ? (int?)null : (int)reader["IdInstrumento"],
-                                NombreInstrumento = reader["NombreInstrumento"].ToString()
+                                IdInstrumento = reader["IdInstrumento"] == DBNull.Value ? (int?)null : (int)reader["IdInstrumento"]
                             });
                         }
                     }
@@ -160,7 +159,7 @@ namespace GestionAcademaDeMusica
                 try
                 {
                     con.Open();
-                    string query = "INSERT INTO Alumnos (NombreAlumno, ApellidoAlumno, FechaNacimiento, TelefonoAlumno, EmailAlumno, ActivoAlumno, IdInstrumento, NombreInstrumento) VALUES (@Nombre, @Apellido, @Fecha, @Telefono, @Email, @Activo, @IdInstrumento, @NombreInstrumento)";
+                    string query = "INSERT INTO Alumnos (NombreAlumno, ApellidoAlumno, FechaNacimiento, TelefonoAlumno, EmailAlumno, ActivoAlumno, IdInstrumento) VALUES (@Nombre, @Apellido, @Fecha, @Telefono, @Email, @Activo, @IdInstrumento)";
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
                         cmd.Parameters.AddWithValue("@Nombre", a.NombreAlumno);
@@ -170,7 +169,6 @@ namespace GestionAcademaDeMusica
                         cmd.Parameters.AddWithValue("@Email", (object)a.EmailAlumno ?? DBNull.Value);
                         cmd.Parameters.AddWithValue("@Activo", a.ActivoAlumno);
                         cmd.Parameters.AddWithValue("@IdInstrumento", (object)a.IdInstrumento ?? DBNull.Value);
-                        cmd.Parameters.AddWithValue("@NombreInstrumento", (object)a.NombreInstrumento ?? DBNull.Value);
                         cmd.ExecuteNonQuery();
                     }
                 }
@@ -188,7 +186,7 @@ namespace GestionAcademaDeMusica
                 try
                 {
                     con.Open();
-                    string query = "UPDATE Alumnos SET NombreAlumno=@Nombre, ApellidoAlumno=@Apellido, FechaNacimiento=@Fecha, TelefonoAlumno=@Telefono, EmailAlumno=@Email, ActivoAlumno=@Activo, IdInstrumento=@IdInstrumento, NombreInstrumento=@NombreInstrumento WHERE IdAlumno=@Id";
+                    string query = "UPDATE Alumnos SET NombreAlumno=@Nombre, ApellidoAlumno=@Apellido, FechaNacimiento=@Fecha, TelefonoAlumno=@Telefono, EmailAlumno=@Email, ActivoAlumno=@Activo, IdInstrumento=@IdInstrumento WHERE IdAlumno=@Id";
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
                         cmd.Parameters.AddWithValue("@Nombre", a.NombreAlumno);
@@ -198,7 +196,6 @@ namespace GestionAcademaDeMusica
                         cmd.Parameters.AddWithValue("@Email", (object)a.EmailAlumno ?? DBNull.Value);
                         cmd.Parameters.AddWithValue("@Activo", a.ActivoAlumno);
                         cmd.Parameters.AddWithValue("@IdInstrumento", (object)a.IdInstrumento ?? DBNull.Value);
-                        cmd.Parameters.AddWithValue("@NombreInstrumento", (object)a.NombreInstrumento ?? DBNull.Value);
                         cmd.Parameters.AddWithValue("@Id", a.IdAlumno);
                         cmd.ExecuteNonQuery();
                     }

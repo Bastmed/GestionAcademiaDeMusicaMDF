@@ -38,3 +38,4 @@ C:\Users\Franco\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\o
 C:\Users\Franco\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.Formularios.UserControls.UCAlumnos.resources
 C:\Users\Franco\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.Formularios.UserControls.UCInstrumentos.resources
 C:\Users\Franco\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.UCProfesores.resources
+C:\Users\Franco\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.Formularios.Alumnos.ActualizarAlumno.resources

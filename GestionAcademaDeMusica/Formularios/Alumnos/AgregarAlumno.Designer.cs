@@ -31,16 +31,16 @@
             this.lblNombreAlumno = new System.Windows.Forms.Label();
             this.lblApellidoAlumno = new System.Windows.Forms.Label();
             this.txtNombreAlumno = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtApellidoAlumno = new System.Windows.Forms.TextBox();
+            this.dtpFechaAlumno = new System.Windows.Forms.DateTimePicker();
             this.lblFechaAlumno = new System.Windows.Forms.Label();
             this.lblTelefonoAlumno = new System.Windows.Forms.Label();
             this.lblEmailAlumno = new System.Windows.Forms.Label();
             this.lblEstadoAlumno = new System.Windows.Forms.Label();
             this.lblInstrumentoAlumno = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.chbEstadoAlumno = new System.Windows.Forms.CheckBox();
+            this.txtTelefonoAlumno = new System.Windows.Forms.TextBox();
+            this.txtEmailAlumno = new System.Windows.Forms.TextBox();
+            this.chkEstadoAlumno = new System.Windows.Forms.CheckBox();
             this.cmbInstrumentoAlumno = new System.Windows.Forms.ComboBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -70,19 +70,19 @@
             this.txtNombreAlumno.Size = new System.Drawing.Size(100, 20);
             this.txtNombreAlumno.TabIndex = 3;
             // 
-            // textBox2
+            // txtApellidoAlumno
             // 
-            this.textBox2.Location = new System.Drawing.Point(92, 178);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtApellidoAlumno.Location = new System.Drawing.Point(92, 178);
+            this.txtApellidoAlumno.Name = "txtApellidoAlumno";
+            this.txtApellidoAlumno.Size = new System.Drawing.Size(100, 20);
+            this.txtApellidoAlumno.TabIndex = 4;
             // 
-            // dateTimePicker1
+            // dtpFechaAlumno
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(92, 263);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 5;
+            this.dtpFechaAlumno.Location = new System.Drawing.Point(92, 263);
+            this.dtpFechaAlumno.Name = "dtpFechaAlumno";
+            this.dtpFechaAlumno.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaAlumno.TabIndex = 5;
             // 
             // lblFechaAlumno
             // 
@@ -129,29 +129,29 @@
             this.lblInstrumentoAlumno.TabIndex = 11;
             this.lblInstrumentoAlumno.Text = "Instrumento:";
             // 
-            // textBox3
+            // txtTelefonoAlumno
             // 
-            this.textBox3.Location = new System.Drawing.Point(95, 346);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 12;
+            this.txtTelefonoAlumno.Location = new System.Drawing.Point(95, 346);
+            this.txtTelefonoAlumno.Name = "txtTelefonoAlumno";
+            this.txtTelefonoAlumno.Size = new System.Drawing.Size(100, 20);
+            this.txtTelefonoAlumno.TabIndex = 12;
             // 
-            // textBox4
+            // txtEmailAlumno
             // 
-            this.textBox4.Location = new System.Drawing.Point(482, 75);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 13;
+            this.txtEmailAlumno.Location = new System.Drawing.Point(482, 75);
+            this.txtEmailAlumno.Name = "txtEmailAlumno";
+            this.txtEmailAlumno.Size = new System.Drawing.Size(100, 20);
+            this.txtEmailAlumno.TabIndex = 13;
             // 
-            // chbEstadoAlumno
+            // chkEstadoAlumno
             // 
-            this.chbEstadoAlumno.AutoSize = true;
-            this.chbEstadoAlumno.Location = new System.Drawing.Point(485, 163);
-            this.chbEstadoAlumno.Name = "chbEstadoAlumno";
-            this.chbEstadoAlumno.Size = new System.Drawing.Size(56, 17);
-            this.chbEstadoAlumno.TabIndex = 16;
-            this.chbEstadoAlumno.Text = "Activo";
-            this.chbEstadoAlumno.UseVisualStyleBackColor = true;
+            this.chkEstadoAlumno.AutoSize = true;
+            this.chkEstadoAlumno.Location = new System.Drawing.Point(485, 163);
+            this.chkEstadoAlumno.Name = "chkEstadoAlumno";
+            this.chkEstadoAlumno.Size = new System.Drawing.Size(56, 17);
+            this.chkEstadoAlumno.TabIndex = 16;
+            this.chkEstadoAlumno.Text = "Activo";
+            this.chkEstadoAlumno.UseVisualStyleBackColor = true;
             // 
             // cmbInstrumentoAlumno
             // 
@@ -169,6 +169,7 @@
             this.btnGuardar.TabIndex = 18;
             this.btnGuardar.Text = "Registrar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // AgregarAlumno
             // 
@@ -177,16 +178,16 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.cmbInstrumentoAlumno);
-            this.Controls.Add(this.chbEstadoAlumno);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.chkEstadoAlumno);
+            this.Controls.Add(this.txtEmailAlumno);
+            this.Controls.Add(this.txtTelefonoAlumno);
             this.Controls.Add(this.lblInstrumentoAlumno);
             this.Controls.Add(this.lblEstadoAlumno);
             this.Controls.Add(this.lblEmailAlumno);
             this.Controls.Add(this.lblTelefonoAlumno);
             this.Controls.Add(this.lblFechaAlumno);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.dtpFechaAlumno);
+            this.Controls.Add(this.txtApellidoAlumno);
             this.Controls.Add(this.txtNombreAlumno);
             this.Controls.Add(this.lblApellidoAlumno);
             this.Controls.Add(this.lblNombreAlumno);
@@ -202,16 +203,16 @@
         private System.Windows.Forms.Label lblNombreAlumno;
         private System.Windows.Forms.Label lblApellidoAlumno;
         private System.Windows.Forms.TextBox txtNombreAlumno;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtApellidoAlumno;
+        private System.Windows.Forms.DateTimePicker dtpFechaAlumno;
         private System.Windows.Forms.Label lblFechaAlumno;
         private System.Windows.Forms.Label lblTelefonoAlumno;
         private System.Windows.Forms.Label lblEmailAlumno;
         private System.Windows.Forms.Label lblEstadoAlumno;
         private System.Windows.Forms.Label lblInstrumentoAlumno;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.CheckBox chbEstadoAlumno;
+        private System.Windows.Forms.TextBox txtTelefonoAlumno;
+        private System.Windows.Forms.TextBox txtEmailAlumno;
+        private System.Windows.Forms.CheckBox chkEstadoAlumno;
         private System.Windows.Forms.ComboBox cmbInstrumentoAlumno;
         private System.Windows.Forms.Button btnGuardar;
     }
