@@ -80,5 +80,6 @@ namespace GestionAcademaDeMusica.Formularios.UserControls
                 CargarDatos();
             }
         }
+
     }
 }

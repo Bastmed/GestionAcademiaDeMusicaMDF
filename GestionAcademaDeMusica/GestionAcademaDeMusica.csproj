@@ -68,6 +68,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\Instrumentos\ActualizarInstrumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Instrumentos\ActualizarInstrumento.Designer.cs">
+      <DependentUpon>ActualizarInstrumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Instrumentos\AgregarInstrumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Instrumentos\AgregarInstrumento.Designer.cs">
+      <DependentUpon>AgregarInstrumento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Alumnos\ActualizarAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +141,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\InicioSesion.resx">
       <DependentUpon>InicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Instrumentos\ActualizarInstrumento.resx">
+      <DependentUpon>ActualizarInstrumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Instrumentos\AgregarInstrumento.resx">
+      <DependentUpon>AgregarInstrumento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
@@ -199,7 +217,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Formularios\Instrumentos\" />
     <Folder Include="Formularios\Profesores\" />
     <Folder Include="Res\" />
   </ItemGroup>
