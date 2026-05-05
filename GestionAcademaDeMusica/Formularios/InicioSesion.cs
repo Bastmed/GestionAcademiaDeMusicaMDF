@@ -33,5 +33,14 @@ namespace GestionAcademaDeMusica.Formularios
                 MessageBox.Show("Usuario o contraseña incorrectos. Inténtalo de nuevo.");
             }
         }
+
+        private void InicioSesion_Load(object sender, EventArgs e)
+        {
+            SendMessage(txtNombreUsuario.Handle, 0x1501, 0, "Ingrese su nombre");
+            SendMessage(txtContraseñaUsuario.Handle, 0x1501, 0, "Ingrese su contraseña");
+        }
+        [System.Runtime.InteropServices.DllImport("user32.dll", CharSet = System.Runtime.InteropServices.CharSet.Unicode)]
+        private static extern IntPtr SendMessage(IntPtr hWnd, int msg, int wParam, string lParam);
+
     }
 }

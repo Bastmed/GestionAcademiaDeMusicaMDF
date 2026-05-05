@@ -220,6 +220,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>GestionMusica.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\logo_txt_nombre.png" />
+    <None Include="Resources\logo_candado.png" />
+    <Content Include="Resources\logo_inicio_sesion.png" />
+    <None Include="Resources\logo_inicio_sesion1.png" />
     <None Include="Resources\images-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
