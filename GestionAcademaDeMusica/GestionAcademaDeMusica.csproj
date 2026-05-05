@@ -223,6 +223,7 @@
     <None Include="Resources\logo_txt_nombre.png" />
     <None Include="Resources\logo_candado.png" />
     <None Include="Resources\icono_txt_contraseña.png" />
+    <Content Include="Resources\epicardo.png" />
     <Content Include="Resources\logo_inicio_sesion.png" />
     <None Include="Resources\logo_inicio_sesion1.png" />
     <None Include="Resources\images-removebg-preview.png" />
@@ -239,8 +240,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Res\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
