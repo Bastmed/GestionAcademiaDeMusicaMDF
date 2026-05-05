@@ -37,7 +37,10 @@
             this.pnlInstrumentos = new System.Windows.Forms.Panel();
             this.pnlProfesores = new System.Windows.Forms.Panel();
             this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.picMenuKongeEgg = new System.Windows.Forms.PictureBox();
             this.pnlIzquierdo.SuspendLayout();
+            this.pnlContenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMenuKongeEgg)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAlumnos
@@ -115,11 +118,22 @@
             // 
             // pnlContenedor
             // 
+            this.pnlContenedor.Controls.Add(this.picMenuKongeEgg);
             this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenedor.Location = new System.Drawing.Point(109, 90);
             this.pnlContenedor.Name = "pnlContenedor";
             this.pnlContenedor.Size = new System.Drawing.Size(771, 375);
             this.pnlContenedor.TabIndex = 5;
+            // 
+            // picMenuKongeEgg
+            // 
+            this.picMenuKongeEgg.Image = global::GestionAcademaDeMusica.Properties.Resources.epicardo;
+            this.picMenuKongeEgg.Location = new System.Drawing.Point(30, 0);
+            this.picMenuKongeEgg.Name = "picMenuKongeEgg";
+            this.picMenuKongeEgg.Size = new System.Drawing.Size(654, 342);
+            this.picMenuKongeEgg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picMenuKongeEgg.TabIndex = 0;
+            this.picMenuKongeEgg.TabStop = false;
             // 
             // MenuPrincipal
             // 
@@ -132,6 +146,8 @@
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
             this.pnlIzquierdo.ResumeLayout(false);
+            this.pnlContenedor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picMenuKongeEgg)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -147,5 +163,6 @@
         private System.Windows.Forms.Panel pnlAlumnos;
         private System.Windows.Forms.Panel pnlInstrumentos;
         private System.Windows.Forms.Panel pnlProfesores;
+        private System.Windows.Forms.PictureBox picMenuKongeEgg;
     }
 }
