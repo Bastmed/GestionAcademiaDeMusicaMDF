@@ -43,88 +43,99 @@
             this.chkEstadoActProfe = new System.Windows.Forms.CheckBox();
             this.lblEstadoActProfe = new System.Windows.Forms.Label();
             this.btnActualizarProfe = new System.Windows.Forms.Button();
+            this.lblTarifaIVA = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblNombreActProfe
             // 
             this.lblNombreActProfe.AutoSize = true;
-            this.lblNombreActProfe.Location = new System.Drawing.Point(66, 74);
+            this.lblNombreActProfe.Location = new System.Drawing.Point(88, 91);
+            this.lblNombreActProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombreActProfe.Name = "lblNombreActProfe";
-            this.lblNombreActProfe.Size = new System.Drawing.Size(47, 13);
+            this.lblNombreActProfe.Size = new System.Drawing.Size(59, 16);
             this.lblNombreActProfe.TabIndex = 0;
             this.lblNombreActProfe.Text = "Nombre:";
             // 
             // lblApellidoActProfe
             // 
             this.lblApellidoActProfe.AutoSize = true;
-            this.lblApellidoActProfe.Location = new System.Drawing.Point(66, 163);
+            this.lblApellidoActProfe.Location = new System.Drawing.Point(88, 201);
+            this.lblApellidoActProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApellidoActProfe.Name = "lblApellidoActProfe";
-            this.lblApellidoActProfe.Size = new System.Drawing.Size(47, 13);
+            this.lblApellidoActProfe.Size = new System.Drawing.Size(60, 16);
             this.lblApellidoActProfe.TabIndex = 1;
             this.lblApellidoActProfe.Text = "Apellido:";
             // 
             // lblTelefonoActProfe
             // 
             this.lblTelefonoActProfe.AutoSize = true;
-            this.lblTelefonoActProfe.Location = new System.Drawing.Point(66, 249);
+            this.lblTelefonoActProfe.Location = new System.Drawing.Point(88, 306);
+            this.lblTelefonoActProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTelefonoActProfe.Name = "lblTelefonoActProfe";
-            this.lblTelefonoActProfe.Size = new System.Drawing.Size(52, 13);
+            this.lblTelefonoActProfe.Size = new System.Drawing.Size(64, 16);
             this.lblTelefonoActProfe.TabIndex = 2;
             this.lblTelefonoActProfe.Text = "Telefono:";
             // 
             // lblEmailActProfe
             // 
             this.lblEmailActProfe.AutoSize = true;
-            this.lblEmailActProfe.Location = new System.Drawing.Point(66, 342);
+            this.lblEmailActProfe.Location = new System.Drawing.Point(88, 421);
+            this.lblEmailActProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmailActProfe.Name = "lblEmailActProfe";
-            this.lblEmailActProfe.Size = new System.Drawing.Size(35, 13);
+            this.lblEmailActProfe.Size = new System.Drawing.Size(44, 16);
             this.lblEmailActProfe.TabIndex = 3;
             this.lblEmailActProfe.Text = "Email:";
             // 
             // lblEspecialidadActProfe
             // 
             this.lblEspecialidadActProfe.AutoSize = true;
-            this.lblEspecialidadActProfe.Location = new System.Drawing.Point(310, 74);
+            this.lblEspecialidadActProfe.Location = new System.Drawing.Point(413, 91);
+            this.lblEspecialidadActProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEspecialidadActProfe.Name = "lblEspecialidadActProfe";
-            this.lblEspecialidadActProfe.Size = new System.Drawing.Size(70, 13);
+            this.lblEspecialidadActProfe.Size = new System.Drawing.Size(90, 16);
             this.lblEspecialidadActProfe.TabIndex = 4;
             this.lblEspecialidadActProfe.Text = "Especialidad:";
             // 
             // lblTarifaActProfe
             // 
             this.lblTarifaActProfe.AutoSize = true;
-            this.lblTarifaActProfe.Location = new System.Drawing.Point(553, 74);
+            this.lblTarifaActProfe.Location = new System.Drawing.Point(737, 91);
+            this.lblTarifaActProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTarifaActProfe.Name = "lblTarifaActProfe";
-            this.lblTarifaActProfe.Size = new System.Drawing.Size(37, 13);
+            this.lblTarifaActProfe.Size = new System.Drawing.Size(45, 16);
             this.lblTarifaActProfe.TabIndex = 5;
             this.lblTarifaActProfe.Text = "Tarifa:";
             // 
             // txtNombreActProfe
             // 
-            this.txtNombreActProfe.Location = new System.Drawing.Point(69, 100);
+            this.txtNombreActProfe.Location = new System.Drawing.Point(92, 123);
+            this.txtNombreActProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombreActProfe.Name = "txtNombreActProfe";
-            this.txtNombreActProfe.Size = new System.Drawing.Size(100, 20);
+            this.txtNombreActProfe.Size = new System.Drawing.Size(132, 22);
             this.txtNombreActProfe.TabIndex = 6;
             // 
             // txtApellidoActProfe
             // 
-            this.txtApellidoActProfe.Location = new System.Drawing.Point(69, 194);
+            this.txtApellidoActProfe.Location = new System.Drawing.Point(92, 239);
+            this.txtApellidoActProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtApellidoActProfe.Name = "txtApellidoActProfe";
-            this.txtApellidoActProfe.Size = new System.Drawing.Size(100, 20);
+            this.txtApellidoActProfe.Size = new System.Drawing.Size(132, 22);
             this.txtApellidoActProfe.TabIndex = 7;
             // 
             // txtTelefonoActProfe
             // 
-            this.txtTelefonoActProfe.Location = new System.Drawing.Point(69, 278);
+            this.txtTelefonoActProfe.Location = new System.Drawing.Point(92, 342);
+            this.txtTelefonoActProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTelefonoActProfe.Name = "txtTelefonoActProfe";
-            this.txtTelefonoActProfe.Size = new System.Drawing.Size(100, 20);
+            this.txtTelefonoActProfe.Size = new System.Drawing.Size(132, 22);
             this.txtTelefonoActProfe.TabIndex = 8;
             // 
             // txtEmailActProfe
             // 
-            this.txtEmailActProfe.Location = new System.Drawing.Point(69, 374);
+            this.txtEmailActProfe.Location = new System.Drawing.Point(92, 460);
+            this.txtEmailActProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEmailActProfe.Name = "txtEmailActProfe";
-            this.txtEmailActProfe.Size = new System.Drawing.Size(100, 20);
+            this.txtEmailActProfe.Size = new System.Drawing.Size(132, 22);
             this.txtEmailActProfe.TabIndex = 9;
             // 
             // cmbEspecialidadActProfe
@@ -153,50 +164,67 @@
             "Teoría Musical y Solfeo",
             "Composición",
             "Dirección Coral"});
-            this.cmbEspecialidadActProfe.Location = new System.Drawing.Point(313, 98);
+            this.cmbEspecialidadActProfe.Location = new System.Drawing.Point(417, 121);
+            this.cmbEspecialidadActProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbEspecialidadActProfe.Name = "cmbEspecialidadActProfe";
-            this.cmbEspecialidadActProfe.Size = new System.Drawing.Size(121, 21);
+            this.cmbEspecialidadActProfe.Size = new System.Drawing.Size(160, 24);
             this.cmbEspecialidadActProfe.TabIndex = 10;
             // 
             // txtTarifaActProfe
             // 
-            this.txtTarifaActProfe.Location = new System.Drawing.Point(556, 99);
+            this.txtTarifaActProfe.Location = new System.Drawing.Point(741, 122);
+            this.txtTarifaActProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTarifaActProfe.Name = "txtTarifaActProfe";
-            this.txtTarifaActProfe.Size = new System.Drawing.Size(100, 20);
+            this.txtTarifaActProfe.Size = new System.Drawing.Size(132, 22);
             this.txtTarifaActProfe.TabIndex = 11;
+            this.txtTarifaActProfe.TextChanged += new System.EventHandler(this.txtTarifaActProfe_TextChanged);
             // 
             // chkEstadoActProfe
             // 
             this.chkEstadoActProfe.AutoSize = true;
-            this.chkEstadoActProfe.Location = new System.Drawing.Point(556, 219);
+            this.chkEstadoActProfe.Location = new System.Drawing.Point(741, 270);
+            this.chkEstadoActProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkEstadoActProfe.Name = "chkEstadoActProfe";
-            this.chkEstadoActProfe.Size = new System.Drawing.Size(15, 14);
+            this.chkEstadoActProfe.Size = new System.Drawing.Size(18, 17);
             this.chkEstadoActProfe.TabIndex = 12;
             this.chkEstadoActProfe.UseVisualStyleBackColor = true;
             // 
             // lblEstadoActProfe
             // 
             this.lblEstadoActProfe.AutoSize = true;
-            this.lblEstadoActProfe.Location = new System.Drawing.Point(553, 194);
+            this.lblEstadoActProfe.Location = new System.Drawing.Point(737, 239);
+            this.lblEstadoActProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEstadoActProfe.Name = "lblEstadoActProfe";
-            this.lblEstadoActProfe.Size = new System.Drawing.Size(40, 13);
+            this.lblEstadoActProfe.Size = new System.Drawing.Size(47, 16);
             this.lblEstadoActProfe.TabIndex = 13;
             this.lblEstadoActProfe.Text = "Activo:";
             // 
             // btnActualizarProfe
             // 
-            this.btnActualizarProfe.Location = new System.Drawing.Point(556, 318);
+            this.btnActualizarProfe.Location = new System.Drawing.Point(741, 391);
+            this.btnActualizarProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnActualizarProfe.Name = "btnActualizarProfe";
-            this.btnActualizarProfe.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizarProfe.Size = new System.Drawing.Size(100, 28);
             this.btnActualizarProfe.TabIndex = 14;
             this.btnActualizarProfe.Text = "Actualizar";
             this.btnActualizarProfe.UseVisualStyleBackColor = true;
             // 
+            // lblTarifaIVA
+            // 
+            this.lblTarifaIVA.AutoSize = true;
+            this.lblTarifaIVA.Location = new System.Drawing.Point(738, 185);
+            this.lblTarifaIVA.Name = "lblTarifaIVA";
+            this.lblTarifaIVA.Size = new System.Drawing.Size(112, 16);
+            this.lblTarifaIVA.TabIndex = 31;
+            this.lblTarifaIVA.Text = "Con IVA (19%): $0";
+            this.lblTarifaIVA.Click += new System.EventHandler(this.lblTarifaIVA_Click);
+            // 
             // ActualizarProfesor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.lblTarifaIVA);
             this.Controls.Add(this.btnActualizarProfe);
             this.Controls.Add(this.lblEstadoActProfe);
             this.Controls.Add(this.chkEstadoActProfe);
@@ -212,6 +240,7 @@
             this.Controls.Add(this.lblTelefonoActProfe);
             this.Controls.Add(this.lblApellidoActProfe);
             this.Controls.Add(this.lblNombreActProfe);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ActualizarProfesor";
             this.Text = "ActualizarProfesor";
             this.ResumeLayout(false);
@@ -236,5 +265,6 @@
         private System.Windows.Forms.CheckBox chkEstadoActProfe;
         private System.Windows.Forms.Label lblEstadoActProfe;
         private System.Windows.Forms.Button btnActualizarProfe;
+        private System.Windows.Forms.Label lblTarifaIVA;
     }
 }
