@@ -73,6 +73,16 @@ namespace GestionAcademaDeMusica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icono_txt_contraseña1 {
+            get {
+                object obj = ResourceManager.GetObject("icono_txt_contraseña1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("images-removebg-preview", resourceCulture);

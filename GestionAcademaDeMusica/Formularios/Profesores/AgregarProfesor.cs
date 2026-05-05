@@ -76,5 +76,24 @@ namespace GestionAcademaDeMusica.Formularios.Profesores
             MessageBox.Show("Profesor agregado exitosamente.");
             this.Close();
         }
+
+        private void txtTarifaAgrProfe_TextChanged(object sender, EventArgs e)
+        {
+            if (decimal.TryParse(txtTarifaAgrProfe.Text.Trim(), out decimal tarifaBase))
+            {
+                
+                decimal tarifaConIva = tarifaBase * 1.19m;
+
+                
+                lblTarifaIVA.Text = $"Con IVA (19%): {tarifaConIva:C}";
+            }
+            else
+            {
+                
+                lblTarifaIVA.Text = "Con IVA (19%): $0";
+            }
+
+        }
     }
 }
+

@@ -127,10 +127,13 @@
   <data name="logo_candado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_candado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icono_txt_contraseña" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_txt_contraseña.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logo_txt_nombre" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_txt_nombre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icono_txt_contraseña" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="icono_txt_contraseña1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icono_txt_contraseña.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

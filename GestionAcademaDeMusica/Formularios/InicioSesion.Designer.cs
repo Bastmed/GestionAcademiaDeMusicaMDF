@@ -38,23 +38,23 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pnlContenedor.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNombreUsuario
             // 
             this.lblNombreUsuario.AutoSize = true;
             this.lblNombreUsuario.Font = new System.Drawing.Font("Roboto SemiCondensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreUsuario.Location = new System.Drawing.Point(413, 143);
+            this.lblNombreUsuario.Location = new System.Drawing.Point(413, 146);
             this.lblNombreUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombreUsuario.Name = "lblNombreUsuario";
             this.lblNombreUsuario.Size = new System.Drawing.Size(63, 18);
@@ -65,7 +65,7 @@
             // 
             this.lblContraseñaUsuario.AutoSize = true;
             this.lblContraseñaUsuario.Font = new System.Drawing.Font("Roboto SemiCondensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseñaUsuario.Location = new System.Drawing.Point(413, 208);
+            this.lblContraseñaUsuario.Location = new System.Drawing.Point(413, 211);
             this.lblContraseñaUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContraseñaUsuario.Name = "lblContraseñaUsuario";
             this.lblContraseñaUsuario.Size = new System.Drawing.Size(86, 18);
@@ -152,7 +152,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(319, 414);
+            this.panel1.Size = new System.Drawing.Size(330, 414);
             this.panel1.TabIndex = 6;
             // 
             // panel2
@@ -161,6 +161,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(5, 414);
             this.panel2.TabIndex = 1;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_txt_contraseña1;
+            this.pictureBox4.Location = new System.Drawing.Point(782, 200);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 11;
+            this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -185,22 +195,12 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GestionAcademaDeMusica.Properties.Resources.logo_inicio_sesion;
-            this.pictureBox1.Location = new System.Drawing.Point(117, 136);
+            this.pictureBox1.Location = new System.Drawing.Point(115, 64);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_txt_contraseña;
-            this.pictureBox4.Location = new System.Drawing.Point(782, 200);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 11;
-            this.pictureBox4.TabStop = false;
             // 
             // InicioSesion
             // 
@@ -220,10 +220,10 @@
             this.pnlContenedor.ResumeLayout(false);
             this.pnlContenedor.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
