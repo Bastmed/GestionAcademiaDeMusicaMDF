@@ -34,19 +34,20 @@
             this.txtContraseñaUsuario = new System.Windows.Forms.TextBox();
             this.btnIniciarSesion = new System.Windows.Forms.Button();
             this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblInicioSesion = new System.Windows.Forms.Label();
             this.pnlContenedor.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,10 +103,10 @@
             this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciarSesion.Font = new System.Drawing.Font("Roboto SemiCondensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciarSesion.ForeColor = System.Drawing.Color.White;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(540, 324);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(545, 318);
             this.btnIniciarSesion.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
-            this.btnIniciarSesion.Size = new System.Drawing.Size(154, 40);
+            this.btnIniciarSesion.Size = new System.Drawing.Size(140, 40);
             this.btnIniciarSesion.TabIndex = 5;
             this.btnIniciarSesion.Text = "Iniciar sesión";
             this.btnIniciarSesion.UseVisualStyleBackColor = false;
@@ -130,38 +131,6 @@
             this.pnlContenedor.Size = new System.Drawing.Size(925, 414);
             this.pnlContenedor.TabIndex = 6;
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Indigo;
-            this.panel4.Location = new System.Drawing.Point(518, 226);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(289, 2);
-            this.panel4.TabIndex = 9;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Indigo;
-            this.panel3.Location = new System.Drawing.Point(518, 162);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(289, 2);
-            this.panel3.TabIndex = 8;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(330, 414);
-            this.panel1.TabIndex = 6;
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(437, 51);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(5, 414);
-            this.panel2.TabIndex = 1;
-            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_txt_contraseña1;
@@ -182,6 +151,22 @@
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Indigo;
+            this.panel4.Location = new System.Drawing.Point(518, 226);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(289, 2);
+            this.panel4.TabIndex = 9;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Indigo;
+            this.panel3.Location = new System.Drawing.Point(518, 162);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(289, 2);
+            this.panel3.TabIndex = 8;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::GestionAcademaDeMusica.Properties.Resources.logo_candado;
@@ -192,6 +177,16 @@
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lblInicioSesion);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(330, 414);
+            this.panel1.TabIndex = 6;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GestionAcademaDeMusica.Properties.Resources.logo_inicio_sesion;
@@ -201,6 +196,23 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(437, 51);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(5, 414);
+            this.panel2.TabIndex = 1;
+            // 
+            // lblInicioSesion
+            // 
+            this.lblInicioSesion.AutoSize = true;
+            this.lblInicioSesion.Font = new System.Drawing.Font("Roboto SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInicioSesion.Location = new System.Drawing.Point(79, 200);
+            this.lblInicioSesion.Name = "lblInicioSesion";
+            this.lblInicioSesion.Size = new System.Drawing.Size(165, 25);
+            this.lblInicioSesion.TabIndex = 1;
+            this.lblInicioSesion.Text = "Ingresa tus datos";
             // 
             // InicioSesion
             // 
@@ -219,10 +231,11 @@
             this.Load += new System.EventHandler(this.InicioSesion_Load);
             this.pnlContenedor.ResumeLayout(false);
             this.pnlContenedor.PerformLayout();
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -243,5 +256,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label lblInicioSesion;
     }
 }
