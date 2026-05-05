@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace GestionAcademaDeMusica.Formularios.Profesores
 {
@@ -13,6 +14,7 @@ namespace GestionAcademaDeMusica.Formularios.Profesores
             InitializeComponent();
             _profesor = seleccionado;
             btnActualizarProfe.Click += btnActualizarProfe_Click;
+            this.Load += ActualizarProfesor_Load;
         }
 
         private void ActualizarProfesor_Load(object sender, EventArgs e)
@@ -24,6 +26,25 @@ namespace GestionAcademaDeMusica.Formularios.Profesores
             cmbEspecialidadActProfe.Text = _profesor.Especialidad;
             txtTarifaActProfe.Text = _profesor.TarifaHora.ToString();
             chkEstadoActProfe.Checked = _profesor.ActivoProfesor;
+        }
+        private bool EmailValido(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        private bool TelefonoValido(string telefono)
+        {
+            string limpio = Regex.Replace(telefono.Trim(), @"[\s\-]", "");
+            string patron = @"^\+?[1-9]\d{7,14}$";
+            return Regex.IsMatch(limpio, patron);
         }
 
         private void btnActualizarProfe_Click(object sender, EventArgs e)
@@ -37,6 +58,20 @@ namespace GestionAcademaDeMusica.Formularios.Profesores
             if (!decimal.TryParse(txtTarifaActProfe.Text.Trim(), out decimal tarifa) || tarifa <= 0)
             {
                 MessageBox.Show("La tarifa debe ser un número mayor a 0.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!string.IsNullOrWhiteSpace(txtEmailActProfe.Text) &&
+                !EmailValido(txtEmailActProfe.Text.Trim()))
+            {
+                MessageBox.Show("El email ingresado no es valido.\nejemplo: usuario@gmail.com", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!string.IsNullOrWhiteSpace(txtTelefonoActProfe.Text) &&
+                !TelefonoValido(txtTelefonoActProfe.Text.Trim()))
+            {
+                MessageBox.Show("El telefono no es válido.\nejemplo: +56 9 1234 5678", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

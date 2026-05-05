@@ -51,3 +51,5 @@ C:\Users\basti\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\ob
 C:\Users\basti\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.csproj.CoreCompileInputs.cache
 C:\Users\basti\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.exe
 C:\Users\basti\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.pdb
+C:\Users\Franco\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.Formularios.Profesores.ActualizarProfesor.resources
+C:\Users\Franco\source\repos\GestionAcademiaDeMusicaMDF\GestionAcademaDeMusica\obj\Debug\GestionAcademaDeMusica.Formularios.Profesores.AgregarProfesor.resources

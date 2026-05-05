@@ -132,6 +132,7 @@
             // txtTelefonoAlumno
             // 
             this.txtTelefonoAlumno.Location = new System.Drawing.Point(95, 346);
+            this.txtTelefonoAlumno.MaxLength = 20;
             this.txtTelefonoAlumno.Name = "txtTelefonoAlumno";
             this.txtTelefonoAlumno.Size = new System.Drawing.Size(100, 20);
             this.txtTelefonoAlumno.TabIndex = 12;

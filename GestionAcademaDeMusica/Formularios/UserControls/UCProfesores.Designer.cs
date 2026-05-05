@@ -40,12 +40,12 @@
             this.dgvProfesores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProfesores.Location = new System.Drawing.Point(3, 27);
             this.dgvProfesores.Name = "dgvProfesores";
-            this.dgvProfesores.Size = new System.Drawing.Size(603, 307);
+            this.dgvProfesores.Size = new System.Drawing.Size(607, 294);
             this.dgvProfesores.TabIndex = 0;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(656, 45);
+            this.btnAgregar.Location = new System.Drawing.Point(646, 27);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(656, 97);
+            this.btnActualizar.Location = new System.Drawing.Point(646, 79);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(75, 23);
             this.btnActualizar.TabIndex = 2;
@@ -65,7 +65,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(656, 155);
+            this.btnEliminar.Location = new System.Drawing.Point(646, 137);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 3;
