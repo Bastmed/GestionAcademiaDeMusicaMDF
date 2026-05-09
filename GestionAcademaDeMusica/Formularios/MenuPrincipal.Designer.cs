@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAlumnos = new System.Windows.Forms.Button();
             this.btnInstrumentos = new System.Windows.Forms.Button();
             this.btnProfesores = new System.Windows.Forms.Button();
             this.pnlSuperior = new System.Windows.Forms.Panel();
@@ -36,6 +35,7 @@
             this.pnlAlumnos = new System.Windows.Forms.Panel();
             this.pnlInstrumentos = new System.Windows.Forms.Panel();
             this.pnlProfesores = new System.Windows.Forms.Panel();
+            this.btn = new System.Windows.Forms.Button();
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.picMenuKongeEgg = new System.Windows.Forms.PictureBox();
             this.pnlIzquierdo.SuspendLayout();
@@ -43,34 +43,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.picMenuKongeEgg)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnAlumnos
-            // 
-            this.btnAlumnos.Location = new System.Drawing.Point(16, 23);
-            this.btnAlumnos.Name = "btnAlumnos";
-            this.btnAlumnos.Size = new System.Drawing.Size(93, 23);
-            this.btnAlumnos.TabIndex = 0;
-            this.btnAlumnos.Text = "Alumnos";
-            this.btnAlumnos.UseVisualStyleBackColor = true;
-            this.btnAlumnos.Click += new System.EventHandler(this.btnAlumnos_Click);
-            // 
             // btnInstrumentos
             // 
+            this.btnInstrumentos.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnInstrumentos.ForeColor = System.Drawing.SystemColors.Info;
             this.btnInstrumentos.Location = new System.Drawing.Point(16, 79);
             this.btnInstrumentos.Name = "btnInstrumentos";
-            this.btnInstrumentos.Size = new System.Drawing.Size(93, 23);
+            this.btnInstrumentos.Size = new System.Drawing.Size(117, 31);
             this.btnInstrumentos.TabIndex = 1;
             this.btnInstrumentos.Text = "Instrumentos";
-            this.btnInstrumentos.UseVisualStyleBackColor = true;
+            this.btnInstrumentos.UseVisualStyleBackColor = false;
             this.btnInstrumentos.Click += new System.EventHandler(this.btnInstrumentos_Click);
             // 
             // btnProfesores
             // 
+            this.btnProfesores.BackColor = System.Drawing.Color.DarkGray;
+            this.btnProfesores.ForeColor = System.Drawing.SystemColors.Info;
             this.btnProfesores.Location = new System.Drawing.Point(16, 129);
             this.btnProfesores.Name = "btnProfesores";
-            this.btnProfesores.Size = new System.Drawing.Size(93, 23);
+            this.btnProfesores.Size = new System.Drawing.Size(117, 31);
             this.btnProfesores.TabIndex = 2;
             this.btnProfesores.Text = "Profesores";
-            this.btnProfesores.UseVisualStyleBackColor = true;
+            this.btnProfesores.UseVisualStyleBackColor = false;
             this.btnProfesores.Click += new System.EventHandler(this.btnProfesores_Click);
             // 
             // pnlSuperior
@@ -78,7 +72,7 @@
             this.pnlSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSuperior.Location = new System.Drawing.Point(0, 0);
             this.pnlSuperior.Name = "pnlSuperior";
-            this.pnlSuperior.Size = new System.Drawing.Size(880, 90);
+            this.pnlSuperior.Size = new System.Drawing.Size(1104, 90);
             this.pnlSuperior.TabIndex = 3;
             // 
             // pnlIzquierdo
@@ -87,50 +81,65 @@
             this.pnlIzquierdo.Controls.Add(this.pnlInstrumentos);
             this.pnlIzquierdo.Controls.Add(this.pnlProfesores);
             this.pnlIzquierdo.Controls.Add(this.btnInstrumentos);
-            this.pnlIzquierdo.Controls.Add(this.btnAlumnos);
+            this.pnlIzquierdo.Controls.Add(this.btn);
             this.pnlIzquierdo.Controls.Add(this.btnProfesores);
             this.pnlIzquierdo.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlIzquierdo.Location = new System.Drawing.Point(0, 90);
             this.pnlIzquierdo.Name = "pnlIzquierdo";
-            this.pnlIzquierdo.Size = new System.Drawing.Size(109, 375);
+            this.pnlIzquierdo.Size = new System.Drawing.Size(133, 521);
             this.pnlIzquierdo.TabIndex = 4;
             // 
             // pnlAlumnos
             // 
+            this.pnlAlumnos.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.pnlAlumnos.Location = new System.Drawing.Point(0, 23);
             this.pnlAlumnos.Name = "pnlAlumnos";
-            this.pnlAlumnos.Size = new System.Drawing.Size(10, 23);
+            this.pnlAlumnos.Size = new System.Drawing.Size(10, 31);
             this.pnlAlumnos.TabIndex = 1;
             // 
             // pnlInstrumentos
             // 
+            this.pnlInstrumentos.BackColor = System.Drawing.Color.RoyalBlue;
             this.pnlInstrumentos.Location = new System.Drawing.Point(0, 79);
             this.pnlInstrumentos.Name = "pnlInstrumentos";
-            this.pnlInstrumentos.Size = new System.Drawing.Size(10, 23);
+            this.pnlInstrumentos.Size = new System.Drawing.Size(10, 31);
             this.pnlInstrumentos.TabIndex = 1;
             // 
             // pnlProfesores
             // 
+            this.pnlProfesores.BackColor = System.Drawing.Color.DarkGray;
             this.pnlProfesores.Location = new System.Drawing.Point(0, 129);
             this.pnlProfesores.Name = "pnlProfesores";
-            this.pnlProfesores.Size = new System.Drawing.Size(10, 23);
+            this.pnlProfesores.Size = new System.Drawing.Size(10, 31);
             this.pnlProfesores.TabIndex = 2;
+            // 
+            // btn
+            // 
+            this.btn.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn.ForeColor = System.Drawing.SystemColors.Info;
+            this.btn.Location = new System.Drawing.Point(16, 23);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(117, 31);
+            this.btn.TabIndex = 0;
+            this.btn.Text = "Alumnos";
+            this.btn.UseVisualStyleBackColor = false;
+            this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
             // pnlContenedor
             // 
             this.pnlContenedor.Controls.Add(this.picMenuKongeEgg);
             this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContenedor.Location = new System.Drawing.Point(109, 90);
+            this.pnlContenedor.Location = new System.Drawing.Point(133, 90);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(771, 375);
+            this.pnlContenedor.Size = new System.Drawing.Size(971, 521);
             this.pnlContenedor.TabIndex = 5;
             // 
             // picMenuKongeEgg
             // 
             this.picMenuKongeEgg.Image = global::GestionAcademaDeMusica.Properties.Resources.epicardo;
-            this.picMenuKongeEgg.Location = new System.Drawing.Point(30, 0);
+            this.picMenuKongeEgg.Location = new System.Drawing.Point(166, 64);
             this.picMenuKongeEgg.Name = "picMenuKongeEgg";
-            this.picMenuKongeEgg.Size = new System.Drawing.Size(654, 342);
+            this.picMenuKongeEgg.Size = new System.Drawing.Size(707, 348);
             this.picMenuKongeEgg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picMenuKongeEgg.TabIndex = 0;
             this.picMenuKongeEgg.TabStop = false;
@@ -139,7 +148,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 465);
+            this.ClientSize = new System.Drawing.Size(1104, 611);
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.pnlIzquierdo);
             this.Controls.Add(this.pnlSuperior);
@@ -153,8 +162,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnAlumnos;
         private System.Windows.Forms.Button btnInstrumentos;
         private System.Windows.Forms.Button btnProfesores;
         private System.Windows.Forms.Panel pnlSuperior;
@@ -164,5 +171,6 @@
         private System.Windows.Forms.Panel pnlInstrumentos;
         private System.Windows.Forms.Panel pnlProfesores;
         private System.Windows.Forms.PictureBox picMenuKongeEgg;
+        private System.Windows.Forms.Button btn;
     }
 }

@@ -35,7 +35,7 @@ namespace GestionAcademaDeMusica.Formularios
             pnlContenedor.Controls.Add(control);
         }
 
-        private void btnAlumnos_Click(object sender, EventArgs e)
+        private void btn_Click(object sender, EventArgs e)
         {
             MostrarPanel(ucAlumnos);
         }
@@ -49,5 +49,7 @@ namespace GestionAcademaDeMusica.Formularios
         {
             MostrarPanel(ucProfesores);
         }
+
+        
     }
 }

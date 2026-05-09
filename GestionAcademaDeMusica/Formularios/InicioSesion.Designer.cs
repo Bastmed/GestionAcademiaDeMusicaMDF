@@ -40,9 +40,11 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.linklblRegistro = new System.Windows.Forms.LinkLabel();
+            this.lblRegistrar = new System.Windows.Forms.Label();
+            this.lblInicioSesion = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblInicioSesion = new System.Windows.Forms.Label();
             this.pnlContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -179,6 +181,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.linklblRegistro);
+            this.panel1.Controls.Add(this.lblRegistrar);
             this.panel1.Controls.Add(this.lblInicioSesion);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -186,6 +190,39 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(330, 414);
             this.panel1.TabIndex = 6;
+            // 
+            // linklblRegistro
+            // 
+            this.linklblRegistro.AutoSize = true;
+            this.linklblRegistro.LinkColor = System.Drawing.Color.Purple;
+            this.linklblRegistro.Location = new System.Drawing.Point(179, 315);
+            this.linklblRegistro.Name = "linklblRegistro";
+            this.linklblRegistro.Size = new System.Drawing.Size(100, 19);
+            this.linklblRegistro.TabIndex = 3;
+            this.linklblRegistro.TabStop = true;
+            this.linklblRegistro.Text = "Registrate aqui";
+            this.linklblRegistro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklblRegistro_LinkClicked);
+            // 
+            // lblRegistrar
+            // 
+            this.lblRegistrar.AutoSize = true;
+            this.lblRegistrar.Font = new System.Drawing.Font("Roboto SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistrar.Location = new System.Drawing.Point(35, 319);
+            this.lblRegistrar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRegistrar.Name = "lblRegistrar";
+            this.lblRegistrar.Size = new System.Drawing.Size(137, 15);
+            this.lblRegistrar.TabIndex = 2;
+            this.lblRegistrar.Text = "¿No tienes una cuenta?";
+            // 
+            // lblInicioSesion
+            // 
+            this.lblInicioSesion.AutoSize = true;
+            this.lblInicioSesion.Font = new System.Drawing.Font("Roboto SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInicioSesion.Location = new System.Drawing.Point(79, 200);
+            this.lblInicioSesion.Name = "lblInicioSesion";
+            this.lblInicioSesion.Size = new System.Drawing.Size(165, 25);
+            this.lblInicioSesion.TabIndex = 1;
+            this.lblInicioSesion.Text = "Ingresa tus datos";
             // 
             // pictureBox1
             // 
@@ -203,16 +240,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(5, 414);
             this.panel2.TabIndex = 1;
-            // 
-            // lblInicioSesion
-            // 
-            this.lblInicioSesion.AutoSize = true;
-            this.lblInicioSesion.Font = new System.Drawing.Font("Roboto SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInicioSesion.Location = new System.Drawing.Point(79, 200);
-            this.lblInicioSesion.Name = "lblInicioSesion";
-            this.lblInicioSesion.Size = new System.Drawing.Size(165, 25);
-            this.lblInicioSesion.TabIndex = 1;
-            this.lblInicioSesion.Text = "Ingresa tus datos";
             // 
             // InicioSesion
             // 
@@ -257,5 +284,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label lblInicioSesion;
+        private System.Windows.Forms.Label lblRegistrar;
+        private System.Windows.Forms.LinkLabel linklblRegistro;
     }
 }

@@ -116,6 +116,12 @@
     <Compile Include="Formularios\Profesores\AgregarProfesor.Designer.cs">
       <DependentUpon>AgregarProfesor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\UserControls\UCAlumnos.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -135,6 +141,9 @@
     </Compile>
     <Compile Include="logica\Academiarepositorio.cs" />
     <Compile Include="Model\Alumno.cs" />
+    <Compile Include="Model\BotonRedondo.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Model\Instrumento.cs" />
     <Compile Include="Model\Profesor.cs" />
     <Compile Include="Program.cs" />
@@ -168,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Profesores\AgregarProfesor.resx">
       <DependentUpon>AgregarProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Registro.resx">
+      <DependentUpon>Registro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\UserControls\UCAlumnos.resx">
       <DependentUpon>UCAlumnos.cs</DependentUpon>
