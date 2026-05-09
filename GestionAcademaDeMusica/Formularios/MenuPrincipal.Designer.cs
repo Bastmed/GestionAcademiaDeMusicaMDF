@@ -46,8 +46,11 @@
             // btnInstrumentos
             // 
             this.btnInstrumentos.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnInstrumentos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInstrumentos.FlatAppearance.BorderSize = 0;
+            this.btnInstrumentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInstrumentos.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnInstrumentos.Location = new System.Drawing.Point(16, 79);
+            this.btnInstrumentos.Location = new System.Drawing.Point(16, 87);
             this.btnInstrumentos.Name = "btnInstrumentos";
             this.btnInstrumentos.Size = new System.Drawing.Size(117, 31);
             this.btnInstrumentos.TabIndex = 1;
@@ -58,8 +61,11 @@
             // btnProfesores
             // 
             this.btnProfesores.BackColor = System.Drawing.Color.DarkGray;
+            this.btnProfesores.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProfesores.FlatAppearance.BorderSize = 0;
+            this.btnProfesores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProfesores.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnProfesores.Location = new System.Drawing.Point(16, 129);
+            this.btnProfesores.Location = new System.Drawing.Point(16, 137);
             this.btnProfesores.Name = "btnProfesores";
             this.btnProfesores.Size = new System.Drawing.Size(117, 31);
             this.btnProfesores.TabIndex = 2;
@@ -92,7 +98,7 @@
             // pnlAlumnos
             // 
             this.pnlAlumnos.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.pnlAlumnos.Location = new System.Drawing.Point(0, 23);
+            this.pnlAlumnos.Location = new System.Drawing.Point(0, 31);
             this.pnlAlumnos.Name = "pnlAlumnos";
             this.pnlAlumnos.Size = new System.Drawing.Size(10, 31);
             this.pnlAlumnos.TabIndex = 1;
@@ -100,7 +106,7 @@
             // pnlInstrumentos
             // 
             this.pnlInstrumentos.BackColor = System.Drawing.Color.RoyalBlue;
-            this.pnlInstrumentos.Location = new System.Drawing.Point(0, 79);
+            this.pnlInstrumentos.Location = new System.Drawing.Point(0, 87);
             this.pnlInstrumentos.Name = "pnlInstrumentos";
             this.pnlInstrumentos.Size = new System.Drawing.Size(10, 31);
             this.pnlInstrumentos.TabIndex = 1;
@@ -108,7 +114,7 @@
             // pnlProfesores
             // 
             this.pnlProfesores.BackColor = System.Drawing.Color.DarkGray;
-            this.pnlProfesores.Location = new System.Drawing.Point(0, 129);
+            this.pnlProfesores.Location = new System.Drawing.Point(0, 137);
             this.pnlProfesores.Name = "pnlProfesores";
             this.pnlProfesores.Size = new System.Drawing.Size(10, 31);
             this.pnlProfesores.TabIndex = 2;
@@ -116,8 +122,11 @@
             // btn
             // 
             this.btn.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn.FlatAppearance.BorderSize = 0;
+            this.btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn.ForeColor = System.Drawing.SystemColors.Info;
-            this.btn.Location = new System.Drawing.Point(16, 23);
+            this.btn.Location = new System.Drawing.Point(16, 31);
             this.btn.Name = "btn";
             this.btn.Size = new System.Drawing.Size(117, 31);
             this.btn.TabIndex = 0;
@@ -137,9 +146,9 @@
             // picMenuKongeEgg
             // 
             this.picMenuKongeEgg.Image = global::GestionAcademaDeMusica.Properties.Resources.epicardo;
-            this.picMenuKongeEgg.Location = new System.Drawing.Point(166, 64);
+            this.picMenuKongeEgg.Location = new System.Drawing.Point(0, 0);
             this.picMenuKongeEgg.Name = "picMenuKongeEgg";
-            this.picMenuKongeEgg.Size = new System.Drawing.Size(707, 348);
+            this.picMenuKongeEgg.Size = new System.Drawing.Size(971, 521);
             this.picMenuKongeEgg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picMenuKongeEgg.TabIndex = 0;
             this.picMenuKongeEgg.TabStop = false;
@@ -148,6 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.ClientSize = new System.Drawing.Size(1104, 611);
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.pnlIzquierdo);
