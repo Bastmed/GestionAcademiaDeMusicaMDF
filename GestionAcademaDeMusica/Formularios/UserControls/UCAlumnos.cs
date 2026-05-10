@@ -86,5 +86,6 @@ namespace GestionAcademaDeMusica.Formularios.UserControls
             string filtro = txtBuscar.Text.Trim().ToLower();
             dgvAlumnos.DataSource = _repo.ObtenerAlumnos().Where(a => a.NombreAlumno.ToLower().Contains(filtro)).ToList();
         }
+
     }
 }

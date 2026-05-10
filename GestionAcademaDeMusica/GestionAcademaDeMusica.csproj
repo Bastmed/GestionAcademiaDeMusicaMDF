@@ -236,6 +236,7 @@
     <None Include="Resources\logo_candado.png" />
     <None Include="Resources\icono_txt_contraseña.png" />
     <Content Include="Resources\epicardo.png" />
+    <None Include="Resources\icono_musica.png" />
     <Content Include="Resources\logo_inicio_sesion.png" />
     <None Include="Resources\logo_inicio_sesion1.png" />
     <None Include="Resources\images-removebg-preview.png" />
