@@ -1,5 +1,6 @@
 ﻿using GestionAcademaDeMusica.Formularios.Profesores;
 using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace GestionAcademaDeMusica
@@ -76,6 +77,12 @@ namespace GestionAcademaDeMusica
                 MessageBox.Show("Profesor eliminado correctamente.");
                 CargarDatos();
             }
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            string filtro = txtBuscar.Text.Trim().ToLower();
+            dgvProfesores.DataSource = _repo.ObtenerProfesores().Where(p => p.NombreProfesor.ToLower().Contains(filtro)).ToList();
         }
     }
 }

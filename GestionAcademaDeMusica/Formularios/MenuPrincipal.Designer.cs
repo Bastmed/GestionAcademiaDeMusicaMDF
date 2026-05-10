@@ -45,11 +45,13 @@
             // 
             // btnInstrumentos
             // 
-            this.btnInstrumentos.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnInstrumentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.btnInstrumentos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInstrumentos.FlatAppearance.BorderSize = 0;
+            this.btnInstrumentos.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btnInstrumentos.FlatAppearance.BorderSize = 2;
             this.btnInstrumentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInstrumentos.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnInstrumentos.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInstrumentos.ForeColor = System.Drawing.Color.White;
             this.btnInstrumentos.Location = new System.Drawing.Point(16, 87);
             this.btnInstrumentos.Name = "btnInstrumentos";
             this.btnInstrumentos.Size = new System.Drawing.Size(117, 31);
@@ -60,11 +62,13 @@
             // 
             // btnProfesores
             // 
-            this.btnProfesores.BackColor = System.Drawing.Color.DarkGray;
+            this.btnProfesores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.btnProfesores.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProfesores.FlatAppearance.BorderSize = 0;
+            this.btnProfesores.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnProfesores.FlatAppearance.BorderSize = 2;
             this.btnProfesores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProfesores.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnProfesores.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfesores.ForeColor = System.Drawing.Color.White;
             this.btnProfesores.Location = new System.Drawing.Point(16, 137);
             this.btnProfesores.Name = "btnProfesores";
             this.btnProfesores.Size = new System.Drawing.Size(117, 31);
@@ -121,11 +125,13 @@
             // 
             // btn
             // 
-            this.btn.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn.FlatAppearance.BorderSize = 0;
+            this.btn.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn.FlatAppearance.BorderSize = 2;
             this.btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn.ForeColor = System.Drawing.SystemColors.Info;
+            this.btn.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn.ForeColor = System.Drawing.Color.White;
             this.btn.Location = new System.Drawing.Point(16, 31);
             this.btn.Name = "btn";
             this.btn.Size = new System.Drawing.Size(117, 31);

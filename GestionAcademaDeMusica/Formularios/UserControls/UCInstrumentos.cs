@@ -77,5 +77,11 @@ namespace GestionAcademaDeMusica.Formularios.UserControls
             }
 
         }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            string filtro = txtBuscar.Text.Trim().ToLower();
+            dgvInstrumentos.DataSource = _repo.ObtenerInstrumentos().Where(i => i.NombreInstrumento.ToLower().Contains(filtro)).ToList();
+        }
     }
 }
