@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace GestionAcademaDeMusica.Formularios.Profesores
 {
@@ -8,29 +8,38 @@ namespace GestionAcademaDeMusica.Formularios.Profesores
     {
         private AcademiaRepositorio _repo = new AcademiaRepositorio();
 
+        private static readonly string[] PrefijosLatam = {
+            "+54 (Argentina)", "+591 (Bolivia)", "+55 (Brasil)", "+56 (Chile)",
+            "+57 (Colombia)", "+506 (Costa Rica)", "+53 (Cuba)", "+593 (Ecuador)",
+            "+503 (El Salvador)", "+502 (Guatemala)", "+509 (Haití)", "+504 (Honduras)",
+            "+52 (México)", "+505 (Nicaragua)", "+507 (Panamá)", "+595 (Paraguay)",
+            "+51 (Perú)", "+1 (Puerto Rico)", "+1 (Rep. Dominicana)", "+598 (Uruguay)",
+            "+58 (Venezuela)"
+        };
+
         public AgregarProfesor()
         {
             InitializeComponent();
-            btnRegistrarProfe.Click += btnRegistrarProfe_Click;
-        }
-        private bool EmailValido(string email)
-        {
-            try
-            {
-                var addr = new System.Net.Mail.MailAddress(email);
-                return addr.Address == email;
-            }
-            catch
-            {
-                return false;
-            }
+            btnRegistrarPro.Click += btnRegistrarProfe_Click;
+
+            cmbTelefonoAgrProfesor.Items.AddRange(PrefijosLatam);
+            cmbTelefonoAgrProfesor.SelectedIndex = 3; // Chile por defecto
         }
 
-        private bool TelefonoValido(string telefono)
+        private bool NombreValido(string texto)
         {
-            string limpio = Regex.Replace(telefono.Trim(), @"[\s\-]", "");
-            string patron = @"^\+?[1-9]\d{7,14}$";
-            return Regex.IsMatch(limpio, patron);
+            return Regex.IsMatch(texto.Trim(), @"^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ\s]+$");
+        }
+
+        private bool EmailValido(string email)
+        {
+            try { var a = new System.Net.Mail.MailAddress(email); return a.Address == email; }
+            catch { return false; }
+        }
+
+        private bool TelefonoValido(string numero)
+        {
+            return Regex.IsMatch(numero.Trim(), @"^\d{7,12}$");
         }
 
         private void btnRegistrarProfe_Click(object sender, EventArgs e)
@@ -41,31 +50,47 @@ namespace GestionAcademaDeMusica.Formularios.Profesores
                 return;
             }
 
+            if (!NombreValido(txtNombreAgrProfe.Text))
+            {
+                MessageBox.Show("El nombre solo puede contener letras.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!NombreValido(txtApellidoAgrProfe.Text))
+            {
+                MessageBox.Show("El apellido solo puede contener letras.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             if (!decimal.TryParse(txtTarifaAgrProfe.Text.Trim(), out decimal tarifa) || tarifa <= 0)
             {
                 MessageBox.Show("La tarifa debe ser un número mayor a 0.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            if (!string.IsNullOrWhiteSpace(txtEmailAgrProfe.Text) &&
-                !EmailValido(txtEmailAgrProfe.Text.Trim()))
+            if (!string.IsNullOrWhiteSpace(txtEmailAgrProfe.Text) && !EmailValido(txtEmailAgrProfe.Text.Trim()))
             {
-                MessageBox.Show("El email ingresado no es valido.\nejemplo: usuario@gmail.com", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("El email ingresado no es válido.\nejemplo: usuario@gmail.com", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            if (!string.IsNullOrWhiteSpace(txtTelefonoAgrProfe.Text) &&
-                !TelefonoValido(txtTelefonoAgrProfe.Text.Trim()))
+            string telefonoFinal = "";
+            if (!string.IsNullOrWhiteSpace(txtTelefonoAgrProfe.Text))
             {
-                MessageBox.Show("El telefono no es válido.\nejemplo: +56 9 1234 5678", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                if (!TelefonoValido(txtTelefonoAgrProfe.Text))
+                {
+                    MessageBox.Show("El número de teléfono debe contener solo dígitos (7 a 12).\nejemplo: 912345678", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                string prefijo = cmbTelefonoAgrProfesor.SelectedItem?.ToString().Split(' ')[0] ?? "";
+                telefonoFinal = prefijo + " " + txtTelefonoAgrProfe.Text.Trim();
             }
 
             Profesor nuevoProfesor = new Profesor
             {
                 NombreProfesor = txtNombreAgrProfe.Text.Trim(),
                 ApellidoProfesor = txtApellidoAgrProfe.Text.Trim(),
-                TelefonoProfesor = txtTelefonoAgrProfe.Text.Trim(),
+                TelefonoProfesor = telefonoFinal,
                 EmailProfesor = txtEmailAgrProfe.Text.Trim(),
                 Especialidad = cmbEspecialidadAgrProfe.Text.Trim(),
                 TarifaHora = tarifa,
@@ -80,20 +105,9 @@ namespace GestionAcademaDeMusica.Formularios.Profesores
         private void txtTarifaAgrProfe_TextChanged(object sender, EventArgs e)
         {
             if (decimal.TryParse(txtTarifaAgrProfe.Text.Trim(), out decimal tarifaBase))
-            {
-                
-                decimal tarifaConIva = tarifaBase * 1.19m;
-
-                
-                lblTarifaIVA.Text = $"Con IVA (19%): {tarifaConIva:C}";
-            }
+                lblTarifaIVA.Text = $"Con IVA (19%): {tarifaBase * 1.19m:C}";
             else
-            {
-                
                 lblTarifaIVA.Text = "Con IVA (19%): $0";
-            }
-
         }
     }
 }
-

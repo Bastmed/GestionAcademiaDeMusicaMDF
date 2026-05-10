@@ -42,42 +42,52 @@
             this.lblTelefonoAgrProfe = new System.Windows.Forms.Label();
             this.lblApellidoAgrProfe = new System.Windows.Forms.Label();
             this.lblNombreAgrProfe = new System.Windows.Forms.Label();
-            this.btnRegistrarProfe = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblTarifaIVA = new System.Windows.Forms.Label();
+            this.cmbTelefonoAgrProfesor = new System.Windows.Forms.ComboBox();
+            this.btnRegistrarPro = new GestionAcademaDeMusica.Model.BotonRedondo();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // lblEstadoAgrProfe
             // 
             this.lblEstadoAgrProfe.AutoSize = true;
-            this.lblEstadoAgrProfe.Location = new System.Drawing.Point(745, 224);
-            this.lblEstadoAgrProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEstadoAgrProfe.Location = new System.Drawing.Point(559, 182);
             this.lblEstadoAgrProfe.Name = "lblEstadoAgrProfe";
-            this.lblEstadoAgrProfe.Size = new System.Drawing.Size(47, 16);
+            this.lblEstadoAgrProfe.Size = new System.Drawing.Size(40, 13);
             this.lblEstadoAgrProfe.TabIndex = 27;
             this.lblEstadoAgrProfe.Text = "Activo:";
             // 
             // chkEstadoAgrProfe
             // 
             this.chkEstadoAgrProfe.AutoSize = true;
-            this.chkEstadoAgrProfe.Location = new System.Drawing.Point(749, 255);
-            this.chkEstadoAgrProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkEstadoAgrProfe.Location = new System.Drawing.Point(562, 207);
             this.chkEstadoAgrProfe.Name = "chkEstadoAgrProfe";
-            this.chkEstadoAgrProfe.Size = new System.Drawing.Size(18, 17);
+            this.chkEstadoAgrProfe.Size = new System.Drawing.Size(15, 14);
             this.chkEstadoAgrProfe.TabIndex = 26;
             this.chkEstadoAgrProfe.UseVisualStyleBackColor = true;
             // 
             // txtTarifaAgrProfe
             // 
-            this.txtTarifaAgrProfe.Location = new System.Drawing.Point(749, 107);
-            this.txtTarifaAgrProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTarifaAgrProfe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.txtTarifaAgrProfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTarifaAgrProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTarifaAgrProfe.ForeColor = System.Drawing.Color.White;
+            this.txtTarifaAgrProfe.Location = new System.Drawing.Point(562, 87);
             this.txtTarifaAgrProfe.Name = "txtTarifaAgrProfe";
-            this.txtTarifaAgrProfe.Size = new System.Drawing.Size(132, 22);
+            this.txtTarifaAgrProfe.Size = new System.Drawing.Size(100, 14);
             this.txtTarifaAgrProfe.TabIndex = 25;
             this.txtTarifaAgrProfe.TextChanged += new System.EventHandler(this.txtTarifaAgrProfe_TextChanged);
             // 
             // cmbEspecialidadAgrProfe
             // 
+            this.cmbEspecialidadAgrProfe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.cmbEspecialidadAgrProfe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbEspecialidadAgrProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbEspecialidadAgrProfe.ForeColor = System.Drawing.Color.White;
             this.cmbEspecialidadAgrProfe.FormattingEnabled = true;
             this.cmbEspecialidadAgrProfe.Items.AddRange(new object[] {
             "Guitarra Clásica",
@@ -102,140 +112,195 @@
             "Teoría Musical y Solfeo",
             "Composición",
             "Dirección Coral"});
-            this.cmbEspecialidadAgrProfe.Location = new System.Drawing.Point(425, 106);
-            this.cmbEspecialidadAgrProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbEspecialidadAgrProfe.Location = new System.Drawing.Point(344, 86);
             this.cmbEspecialidadAgrProfe.Name = "cmbEspecialidadAgrProfe";
-            this.cmbEspecialidadAgrProfe.Size = new System.Drawing.Size(160, 24);
+            this.cmbEspecialidadAgrProfe.Size = new System.Drawing.Size(121, 23);
             this.cmbEspecialidadAgrProfe.TabIndex = 24;
             // 
             // txtEmailAgrProfe
             // 
-            this.txtEmailAgrProfe.Location = new System.Drawing.Point(100, 446);
-            this.txtEmailAgrProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmailAgrProfe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.txtEmailAgrProfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmailAgrProfe.ForeColor = System.Drawing.Color.White;
+            this.txtEmailAgrProfe.Location = new System.Drawing.Point(136, 362);
             this.txtEmailAgrProfe.Name = "txtEmailAgrProfe";
-            this.txtEmailAgrProfe.Size = new System.Drawing.Size(132, 22);
+            this.txtEmailAgrProfe.Size = new System.Drawing.Size(100, 13);
             this.txtEmailAgrProfe.TabIndex = 23;
             // 
             // txtTelefonoAgrProfe
             // 
-            this.txtTelefonoAgrProfe.Location = new System.Drawing.Point(100, 327);
-            this.txtTelefonoAgrProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefonoAgrProfe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.txtTelefonoAgrProfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTelefonoAgrProfe.ForeColor = System.Drawing.Color.White;
+            this.txtTelefonoAgrProfe.Location = new System.Drawing.Point(136, 266);
             this.txtTelefonoAgrProfe.Name = "txtTelefonoAgrProfe";
-            this.txtTelefonoAgrProfe.Size = new System.Drawing.Size(132, 22);
+            this.txtTelefonoAgrProfe.Size = new System.Drawing.Size(100, 13);
             this.txtTelefonoAgrProfe.TabIndex = 22;
             // 
             // txtApellidoAgrProfe
             // 
-            this.txtApellidoAgrProfe.Location = new System.Drawing.Point(100, 224);
-            this.txtApellidoAgrProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtApellidoAgrProfe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.txtApellidoAgrProfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtApellidoAgrProfe.ForeColor = System.Drawing.Color.White;
+            this.txtApellidoAgrProfe.Location = new System.Drawing.Point(136, 182);
             this.txtApellidoAgrProfe.Name = "txtApellidoAgrProfe";
-            this.txtApellidoAgrProfe.Size = new System.Drawing.Size(132, 22);
+            this.txtApellidoAgrProfe.Size = new System.Drawing.Size(100, 13);
             this.txtApellidoAgrProfe.TabIndex = 21;
             // 
             // txtNombreAgrProfe
             // 
-            this.txtNombreAgrProfe.Location = new System.Drawing.Point(100, 108);
-            this.txtNombreAgrProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreAgrProfe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.txtNombreAgrProfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNombreAgrProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreAgrProfe.ForeColor = System.Drawing.Color.White;
+            this.txtNombreAgrProfe.Location = new System.Drawing.Point(136, 88);
             this.txtNombreAgrProfe.Name = "txtNombreAgrProfe";
-            this.txtNombreAgrProfe.Size = new System.Drawing.Size(132, 22);
+            this.txtNombreAgrProfe.Size = new System.Drawing.Size(100, 14);
             this.txtNombreAgrProfe.TabIndex = 20;
             // 
             // lblTarifaAgrProfe
             // 
             this.lblTarifaAgrProfe.AutoSize = true;
-            this.lblTarifaAgrProfe.Location = new System.Drawing.Point(745, 76);
-            this.lblTarifaAgrProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTarifaAgrProfe.Location = new System.Drawing.Point(559, 62);
             this.lblTarifaAgrProfe.Name = "lblTarifaAgrProfe";
-            this.lblTarifaAgrProfe.Size = new System.Drawing.Size(45, 16);
+            this.lblTarifaAgrProfe.Size = new System.Drawing.Size(37, 13);
             this.lblTarifaAgrProfe.TabIndex = 19;
             this.lblTarifaAgrProfe.Text = "Tarifa:";
             // 
             // lblEspecialidadAgrProfe
             // 
             this.lblEspecialidadAgrProfe.AutoSize = true;
-            this.lblEspecialidadAgrProfe.Location = new System.Drawing.Point(421, 76);
-            this.lblEspecialidadAgrProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEspecialidadAgrProfe.Location = new System.Drawing.Point(341, 62);
             this.lblEspecialidadAgrProfe.Name = "lblEspecialidadAgrProfe";
-            this.lblEspecialidadAgrProfe.Size = new System.Drawing.Size(90, 16);
+            this.lblEspecialidadAgrProfe.Size = new System.Drawing.Size(70, 13);
             this.lblEspecialidadAgrProfe.TabIndex = 18;
             this.lblEspecialidadAgrProfe.Text = "Especialidad:";
             // 
             // lblEmailAgrProfe
             // 
             this.lblEmailAgrProfe.AutoSize = true;
-            this.lblEmailAgrProfe.Location = new System.Drawing.Point(96, 406);
-            this.lblEmailAgrProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmailAgrProfe.Location = new System.Drawing.Point(133, 330);
             this.lblEmailAgrProfe.Name = "lblEmailAgrProfe";
-            this.lblEmailAgrProfe.Size = new System.Drawing.Size(44, 16);
+            this.lblEmailAgrProfe.Size = new System.Drawing.Size(35, 13);
             this.lblEmailAgrProfe.TabIndex = 17;
             this.lblEmailAgrProfe.Text = "Email:";
             // 
             // lblTelefonoAgrProfe
             // 
             this.lblTelefonoAgrProfe.AutoSize = true;
-            this.lblTelefonoAgrProfe.Location = new System.Drawing.Point(96, 292);
-            this.lblTelefonoAgrProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTelefonoAgrProfe.Location = new System.Drawing.Point(133, 237);
             this.lblTelefonoAgrProfe.Name = "lblTelefonoAgrProfe";
-            this.lblTelefonoAgrProfe.Size = new System.Drawing.Size(64, 16);
+            this.lblTelefonoAgrProfe.Size = new System.Drawing.Size(52, 13);
             this.lblTelefonoAgrProfe.TabIndex = 16;
             this.lblTelefonoAgrProfe.Text = "Telefono:";
             // 
             // lblApellidoAgrProfe
             // 
             this.lblApellidoAgrProfe.AutoSize = true;
-            this.lblApellidoAgrProfe.Location = new System.Drawing.Point(96, 186);
-            this.lblApellidoAgrProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblApellidoAgrProfe.Location = new System.Drawing.Point(133, 151);
             this.lblApellidoAgrProfe.Name = "lblApellidoAgrProfe";
-            this.lblApellidoAgrProfe.Size = new System.Drawing.Size(60, 16);
+            this.lblApellidoAgrProfe.Size = new System.Drawing.Size(47, 13);
             this.lblApellidoAgrProfe.TabIndex = 15;
             this.lblApellidoAgrProfe.Text = "Apellido:";
             // 
             // lblNombreAgrProfe
             // 
             this.lblNombreAgrProfe.AutoSize = true;
-            this.lblNombreAgrProfe.Location = new System.Drawing.Point(96, 76);
-            this.lblNombreAgrProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombreAgrProfe.Location = new System.Drawing.Point(133, 62);
             this.lblNombreAgrProfe.Name = "lblNombreAgrProfe";
-            this.lblNombreAgrProfe.Size = new System.Drawing.Size(59, 16);
+            this.lblNombreAgrProfe.Size = new System.Drawing.Size(47, 13);
             this.lblNombreAgrProfe.TabIndex = 14;
             this.lblNombreAgrProfe.Text = "Nombre:";
-            // 
-            // btnRegistrarProfe
-            // 
-            this.btnRegistrarProfe.Location = new System.Drawing.Point(749, 347);
-            this.btnRegistrarProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnRegistrarProfe.Name = "btnRegistrarProfe";
-            this.btnRegistrarProfe.Size = new System.Drawing.Size(100, 28);
-            this.btnRegistrarProfe.TabIndex = 28;
-            this.btnRegistrarProfe.Text = "Registrar";
-            this.btnRegistrarProfe.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "label1";
             // 
             // lblTarifaIVA
             // 
             this.lblTarifaIVA.AutoSize = true;
-            this.lblTarifaIVA.Location = new System.Drawing.Point(748, 168);
+            this.lblTarifaIVA.Location = new System.Drawing.Point(561, 136);
+            this.lblTarifaIVA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTarifaIVA.Name = "lblTarifaIVA";
-            this.lblTarifaIVA.Size = new System.Drawing.Size(112, 16);
+            this.lblTarifaIVA.Size = new System.Drawing.Size(93, 13);
             this.lblTarifaIVA.TabIndex = 30;
             this.lblTarifaIVA.Text = "Con IVA (19%): $0";
             // 
+            // cmbTelefonoAgrProfesor
+            // 
+            this.cmbTelefonoAgrProfesor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.cmbTelefonoAgrProfesor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbTelefonoAgrProfesor.ForeColor = System.Drawing.Color.White;
+            this.cmbTelefonoAgrProfesor.FormattingEnabled = true;
+            this.cmbTelefonoAgrProfesor.Location = new System.Drawing.Point(12, 265);
+            this.cmbTelefonoAgrProfesor.Name = "cmbTelefonoAgrProfesor";
+            this.cmbTelefonoAgrProfesor.Size = new System.Drawing.Size(101, 21);
+            this.cmbTelefonoAgrProfesor.TabIndex = 31;
+            // 
+            // btnRegistrarPro
+            // 
+            this.btnRegistrarPro.BackColor = System.Drawing.Color.DarkGray;
+            this.btnRegistrarPro.FlatAppearance.BorderSize = 0;
+            this.btnRegistrarPro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrarPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarPro.ForeColor = System.Drawing.Color.White;
+            this.btnRegistrarPro.Location = new System.Drawing.Point(562, 285);
+            this.btnRegistrarPro.Name = "btnRegistrarPro";
+            this.btnRegistrarPro.Size = new System.Drawing.Size(78, 23);
+            this.btnRegistrarPro.TabIndex = 41;
+            this.btnRegistrarPro.Text = "Registrar";
+            this.btnRegistrarPro.UseVisualStyleBackColor = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.DarkGray;
+            this.panel3.Location = new System.Drawing.Point(562, 107);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(144, 2);
+            this.panel3.TabIndex = 43;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkGray;
+            this.panel1.Location = new System.Drawing.Point(136, 107);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(144, 2);
+            this.panel1.TabIndex = 44;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DarkGray;
+            this.panel2.Location = new System.Drawing.Point(136, 200);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(144, 2);
+            this.panel2.TabIndex = 45;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.DarkGray;
+            this.panel4.Location = new System.Drawing.Point(136, 284);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(144, 2);
+            this.panel4.TabIndex = 46;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.DarkGray;
+            this.panel5.Location = new System.Drawing.Point(136, 380);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(144, 2);
+            this.panel5.TabIndex = 47;
+            // 
             // AgregarProfesor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.btnRegistrarPro);
+            this.Controls.Add(this.cmbTelefonoAgrProfesor);
             this.Controls.Add(this.lblTarifaIVA);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnRegistrarProfe);
             this.Controls.Add(this.lblEstadoAgrProfe);
             this.Controls.Add(this.chkEstadoAgrProfe);
             this.Controls.Add(this.txtTarifaAgrProfe);
@@ -250,7 +315,7 @@
             this.Controls.Add(this.lblTelefonoAgrProfe);
             this.Controls.Add(this.lblApellidoAgrProfe);
             this.Controls.Add(this.lblNombreAgrProfe);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "AgregarProfesor";
             this.Text = "AgregarProfesor";
             this.ResumeLayout(false);
@@ -274,8 +339,13 @@
         private System.Windows.Forms.Label lblTelefonoAgrProfe;
         private System.Windows.Forms.Label lblApellidoAgrProfe;
         private System.Windows.Forms.Label lblNombreAgrProfe;
-        private System.Windows.Forms.Button btnRegistrarProfe;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblTarifaIVA;
+        private System.Windows.Forms.ComboBox cmbTelefonoAgrProfesor;
+        private Model.BotonRedondo btnRegistrarPro;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
     }
 }

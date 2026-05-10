@@ -31,6 +31,10 @@
             this.btnInstrumentos = new System.Windows.Forms.Button();
             this.btnProfesores = new System.Windows.Forms.Button();
             this.pnlSuperior = new System.Windows.Forms.Panel();
+            this.lblSubSubtitulo = new System.Windows.Forms.Label();
+            this.lblSubtitulo = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlIzquierdo = new System.Windows.Forms.Panel();
             this.pnlAlumnos = new System.Windows.Forms.Panel();
             this.pnlInstrumentos = new System.Windows.Forms.Panel();
@@ -38,15 +42,11 @@
             this.btn = new System.Windows.Forms.Button();
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.picMenuKongeEgg = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.lblSubtitulo = new System.Windows.Forms.Label();
-            this.lblSubSubtitulo = new System.Windows.Forms.Label();
             this.pnlSuperior.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlIzquierdo.SuspendLayout();
             this.pnlContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuKongeEgg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnInstrumentos
@@ -56,7 +56,7 @@
             this.btnInstrumentos.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.btnInstrumentos.FlatAppearance.BorderSize = 2;
             this.btnInstrumentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInstrumentos.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInstrumentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInstrumentos.ForeColor = System.Drawing.Color.White;
             this.btnInstrumentos.Location = new System.Drawing.Point(16, 56);
             this.btnInstrumentos.Name = "btnInstrumentos";
@@ -73,7 +73,7 @@
             this.btnProfesores.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
             this.btnProfesores.FlatAppearance.BorderSize = 2;
             this.btnProfesores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProfesores.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfesores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfesores.ForeColor = System.Drawing.Color.White;
             this.btnProfesores.Location = new System.Drawing.Point(16, 106);
             this.btnProfesores.Name = "btnProfesores";
@@ -94,6 +94,49 @@
             this.pnlSuperior.Name = "pnlSuperior";
             this.pnlSuperior.Size = new System.Drawing.Size(1104, 127);
             this.pnlSuperior.TabIndex = 3;
+            // 
+            // lblSubSubtitulo
+            // 
+            this.lblSubSubtitulo.AutoSize = true;
+            this.lblSubSubtitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubSubtitulo.ForeColor = System.Drawing.Color.White;
+            this.lblSubSubtitulo.Location = new System.Drawing.Point(213, 73);
+            this.lblSubSubtitulo.Name = "lblSubSubtitulo";
+            this.lblSubSubtitulo.Size = new System.Drawing.Size(59, 18);
+            this.lblSubSubtitulo.TabIndex = 3;
+            this.lblSubSubtitulo.Text = "Fecha:";
+            // 
+            // lblSubtitulo
+            // 
+            this.lblSubtitulo.AutoSize = true;
+            this.lblSubtitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtitulo.ForeColor = System.Drawing.Color.White;
+            this.lblSubtitulo.Location = new System.Drawing.Point(213, 44);
+            this.lblSubtitulo.Name = "lblSubtitulo";
+            this.lblSubtitulo.Size = new System.Drawing.Size(76, 20);
+            this.lblSubtitulo.TabIndex = 2;
+            this.lblSubtitulo.Text = "Usuario:";
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.Location = new System.Drawing.Point(213, 12);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(410, 24);
+            this.lblTitulo.TabIndex = 1;
+            this.lblTitulo.Text = "Sistema de gestion - Academia Konge Egg";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_musica;
+            this.pictureBox1.Location = new System.Drawing.Point(118, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // pnlIzquierdo
             // 
@@ -140,7 +183,7 @@
             this.btn.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
             this.btn.FlatAppearance.BorderSize = 2;
             this.btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn.ForeColor = System.Drawing.Color.White;
             this.btn.Location = new System.Drawing.Point(16, 0);
             this.btn.Name = "btn";
@@ -169,49 +212,6 @@
             this.picMenuKongeEgg.TabIndex = 0;
             this.picMenuKongeEgg.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_musica;
-            this.pictureBox1.Location = new System.Drawing.Point(118, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Roboto Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(213, 12);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(414, 23);
-            this.lblTitulo.TabIndex = 1;
-            this.lblTitulo.Text = "Sistema de gestion - Academia Konge Egg";
-            // 
-            // lblSubtitulo
-            // 
-            this.lblSubtitulo.AutoSize = true;
-            this.lblSubtitulo.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubtitulo.ForeColor = System.Drawing.Color.White;
-            this.lblSubtitulo.Location = new System.Drawing.Point(213, 44);
-            this.lblSubtitulo.Name = "lblSubtitulo";
-            this.lblSubtitulo.Size = new System.Drawing.Size(76, 19);
-            this.lblSubtitulo.TabIndex = 2;
-            this.lblSubtitulo.Text = "Usuario:";
-            // 
-            // lblSubSubtitulo
-            // 
-            this.lblSubSubtitulo.AutoSize = true;
-            this.lblSubSubtitulo.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubSubtitulo.ForeColor = System.Drawing.Color.White;
-            this.lblSubSubtitulo.Location = new System.Drawing.Point(213, 73);
-            this.lblSubSubtitulo.Name = "lblSubSubtitulo";
-            this.lblSubSubtitulo.Size = new System.Drawing.Size(58, 18);
-            this.lblSubSubtitulo.TabIndex = 3;
-            this.lblSubSubtitulo.Text = "Fecha:";
-            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -225,10 +225,10 @@
             this.Text = "MenuPrincipal";
             this.pnlSuperior.ResumeLayout(false);
             this.pnlSuperior.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlIzquierdo.ResumeLayout(false);
             this.pnlContenedor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picMenuKongeEgg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
