@@ -28,7 +28,7 @@ namespace GestionAcademaDeMusica.Formularios.Instrumentos
             cmbEstadoInstrumento.SelectedItem = _instrumento.Estado;
         }
 
-        private void btnActualizar_Click(object sender, EventArgs e)
+        private void btnActu_Click(object sender, EventArgs e)
         {
             _instrumento.NombreInstrumento = txtNombreInstrumento.Text.Trim();
             _instrumento.Marca = txtMarcaInstrumento.Text.Trim();

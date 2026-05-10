@@ -57,6 +57,7 @@
             // 
             this.lblNombreUsuario.AutoSize = true;
             this.lblNombreUsuario.Font = new System.Drawing.Font("Roboto SemiCondensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreUsuario.ForeColor = System.Drawing.Color.White;
             this.lblNombreUsuario.Location = new System.Drawing.Point(413, 146);
             this.lblNombreUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombreUsuario.Name = "lblNombreUsuario";
@@ -68,6 +69,7 @@
             // 
             this.lblContraseñaUsuario.AutoSize = true;
             this.lblContraseñaUsuario.Font = new System.Drawing.Font("Roboto SemiCondensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContraseñaUsuario.ForeColor = System.Drawing.Color.White;
             this.lblContraseñaUsuario.Location = new System.Drawing.Point(413, 211);
             this.lblContraseñaUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContraseñaUsuario.Name = "lblContraseñaUsuario";
@@ -77,9 +79,10 @@
             // 
             // txtNombreUsuario
             // 
-            this.txtNombreUsuario.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtNombreUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.txtNombreUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombreUsuario.Font = new System.Drawing.Font("Roboto SemiCondensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreUsuario.ForeColor = System.Drawing.Color.White;
             this.txtNombreUsuario.Location = new System.Drawing.Point(518, 143);
             this.txtNombreUsuario.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtNombreUsuario.Name = "txtNombreUsuario";
@@ -88,12 +91,14 @@
             // 
             // txtContraseñaUsuario
             // 
-            this.txtContraseñaUsuario.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtContraseñaUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.txtContraseñaUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtContraseñaUsuario.Font = new System.Drawing.Font("Roboto SemiCondensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseñaUsuario.ForeColor = System.Drawing.Color.White;
             this.txtContraseñaUsuario.Location = new System.Drawing.Point(518, 210);
             this.txtContraseñaUsuario.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtContraseñaUsuario.Name = "txtContraseñaUsuario";
+            this.txtContraseñaUsuario.PasswordChar = '●';
             this.txtContraseñaUsuario.Size = new System.Drawing.Size(264, 19);
             this.txtContraseñaUsuario.TabIndex = 4;
             // 
@@ -116,7 +121,7 @@
             // 
             // pnlContenedor
             // 
-            this.pnlContenedor.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.pnlContenedor.Controls.Add(this.pictureBox4);
             this.pnlContenedor.Controls.Add(this.pictureBox3);
             this.pnlContenedor.Controls.Add(this.panel4);
@@ -194,19 +199,21 @@
             // linklblRegistro
             // 
             this.linklblRegistro.AutoSize = true;
-            this.linklblRegistro.LinkColor = System.Drawing.Color.Purple;
+            this.linklblRegistro.LinkColor = System.Drawing.Color.Violet;
             this.linklblRegistro.Location = new System.Drawing.Point(179, 315);
             this.linklblRegistro.Name = "linklblRegistro";
             this.linklblRegistro.Size = new System.Drawing.Size(100, 19);
             this.linklblRegistro.TabIndex = 3;
             this.linklblRegistro.TabStop = true;
             this.linklblRegistro.Text = "Registrate aqui";
+            this.linklblRegistro.VisitedLinkColor = System.Drawing.Color.Violet;
             this.linklblRegistro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklblRegistro_LinkClicked);
             // 
             // lblRegistrar
             // 
             this.lblRegistrar.AutoSize = true;
             this.lblRegistrar.Font = new System.Drawing.Font("Roboto SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistrar.ForeColor = System.Drawing.Color.White;
             this.lblRegistrar.Location = new System.Drawing.Point(35, 319);
             this.lblRegistrar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRegistrar.Name = "lblRegistrar";
@@ -218,6 +225,7 @@
             // 
             this.lblInicioSesion.AutoSize = true;
             this.lblInicioSesion.Font = new System.Drawing.Font("Roboto SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInicioSesion.ForeColor = System.Drawing.Color.White;
             this.lblInicioSesion.Location = new System.Drawing.Point(79, 200);
             this.lblInicioSesion.Name = "lblInicioSesion";
             this.lblInicioSesion.Size = new System.Drawing.Size(165, 25);

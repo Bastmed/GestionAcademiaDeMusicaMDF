@@ -18,7 +18,7 @@ namespace GestionAcademaDeMusica
             InitializeComponent();
         }
 
-        private void btnRegistrar_Click(object sender, EventArgs e)
+        private void btnGuar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtNombreInstrumento.Text) || string.IsNullOrWhiteSpace(txtMarcaInstrumento.Text))
             {

@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnVolver = new System.Windows.Forms.Button();
+            this.btnRegistro = new System.Windows.Forms.Button();
             this.lblRegistro = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -37,14 +39,12 @@
             this.txtNombreUsuario = new System.Windows.Forms.TextBox();
             this.lblContraseñaUsuario = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnRegistro = new System.Windows.Forms.Button();
-            this.btnVolver = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.panel1.Controls.Add(this.btnVolver);
             this.panel1.Controls.Add(this.btnRegistro);
             this.panel1.Controls.Add(this.lblRegistro);
@@ -60,10 +60,43 @@
             this.panel1.Size = new System.Drawing.Size(763, 341);
             this.panel1.TabIndex = 0;
             // 
+            // btnVolver
+            // 
+            this.btnVolver.BackColor = System.Drawing.Color.Indigo;
+            this.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVolver.FlatAppearance.BorderSize = 0;
+            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolver.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolver.ForeColor = System.Drawing.Color.White;
+            this.btnVolver.Location = new System.Drawing.Point(81, 282);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(70, 23);
+            this.btnVolver.TabIndex = 18;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = false;
+            // 
+            // btnRegistro
+            // 
+            this.btnRegistro.BackColor = System.Drawing.Color.Indigo;
+            this.btnRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegistro.FlatAppearance.BorderSize = 0;
+            this.btnRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistro.Font = new System.Drawing.Font("Roboto SemiCondensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistro.ForeColor = System.Drawing.Color.White;
+            this.btnRegistro.Location = new System.Drawing.Point(456, 271);
+            this.btnRegistro.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnRegistro.Name = "btnRegistro";
+            this.btnRegistro.Size = new System.Drawing.Size(117, 34);
+            this.btnRegistro.TabIndex = 17;
+            this.btnRegistro.Text = "Registrar";
+            this.btnRegistro.UseVisualStyleBackColor = false;
+            // 
             // lblRegistro
             // 
             this.lblRegistro.AutoSize = true;
             this.lblRegistro.Font = new System.Drawing.Font("Roboto SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistro.ForeColor = System.Drawing.Color.White;
             this.lblRegistro.Location = new System.Drawing.Point(34, 147);
             this.lblRegistro.Name = "lblRegistro";
             this.lblRegistro.Size = new System.Drawing.Size(173, 25);
@@ -88,7 +121,7 @@
             // 
             // txtContraseñaUsuario
             // 
-            this.txtContraseñaUsuario.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtContraseñaUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.txtContraseñaUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtContraseñaUsuario.Font = new System.Drawing.Font("Roboto SemiCondensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseñaUsuario.Location = new System.Drawing.Point(386, 195);
@@ -101,6 +134,7 @@
             // 
             this.lblNombreUsuario.AutoSize = true;
             this.lblNombreUsuario.Font = new System.Drawing.Font("Roboto SemiCondensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreUsuario.ForeColor = System.Drawing.Color.White;
             this.lblNombreUsuario.Location = new System.Drawing.Point(281, 131);
             this.lblNombreUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombreUsuario.Name = "lblNombreUsuario";
@@ -110,7 +144,7 @@
             // 
             // txtNombreUsuario
             // 
-            this.txtNombreUsuario.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtNombreUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.txtNombreUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombreUsuario.Font = new System.Drawing.Font("Roboto SemiCondensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreUsuario.Location = new System.Drawing.Point(386, 128);
@@ -123,6 +157,7 @@
             // 
             this.lblContraseñaUsuario.AutoSize = true;
             this.lblContraseñaUsuario.Font = new System.Drawing.Font("Roboto SemiCondensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContraseñaUsuario.ForeColor = System.Drawing.Color.White;
             this.lblContraseñaUsuario.Location = new System.Drawing.Point(281, 196);
             this.lblContraseñaUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContraseñaUsuario.Name = "lblContraseñaUsuario";
@@ -137,38 +172,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(5, 341);
             this.panel2.TabIndex = 2;
-            // 
-            // btnRegistro
-            // 
-            this.btnRegistro.BackColor = System.Drawing.Color.Indigo;
-            this.btnRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegistro.FlatAppearance.BorderSize = 0;
-            this.btnRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistro.Font = new System.Drawing.Font("Roboto SemiCondensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistro.ForeColor = System.Drawing.Color.White;
-            this.btnRegistro.Location = new System.Drawing.Point(456, 271);
-            this.btnRegistro.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnRegistro.Name = "btnRegistro";
-            this.btnRegistro.Size = new System.Drawing.Size(117, 34);
-            this.btnRegistro.TabIndex = 17;
-            this.btnRegistro.Text = "Registrar";
-            this.btnRegistro.UseVisualStyleBackColor = false;
-            // 
-            // btnVolver
-            // 
-            this.btnVolver.BackColor = System.Drawing.Color.Indigo;
-            this.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVolver.FlatAppearance.BorderSize = 0;
-            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolver.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.ForeColor = System.Drawing.Color.White;
-            this.btnVolver.Location = new System.Drawing.Point(81, 282);
-            this.btnVolver.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(70, 23);
-            this.btnVolver.TabIndex = 18;
-            this.btnVolver.Text = "Volver";
-            this.btnVolver.UseVisualStyleBackColor = false;
             // 
             // Registro
             // 

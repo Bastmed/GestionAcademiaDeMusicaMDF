@@ -36,7 +36,8 @@ namespace GestionAcademaDeMusica.Formularios.Alumnos
             string patron = @"^\+?[1-9]\d{7,14}$";
             return Regex.IsMatch(limpio, patron);
         }
-        private void btnGuardar_Click(object sender, EventArgs e)
+
+        private void btnGuar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtNombreAlumno.Text) || string.IsNullOrWhiteSpace(txtApellidoAlumno.Text))
             {
@@ -77,5 +78,6 @@ namespace GestionAcademaDeMusica.Formularios.Alumnos
             MessageBox.Show("Alumno agregado exitosamente.");
             this.Close();
         }
+
     }
 }

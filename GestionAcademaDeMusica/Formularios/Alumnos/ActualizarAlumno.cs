@@ -50,7 +50,8 @@ namespace GestionAcademaDeMusica.Formularios.Alumnos
             string patron = @"^\+?[1-9]\d{7,14}$";
             return Regex.IsMatch(limpio, patron);
         }
-        private void btnActualizar_Click(object sender, EventArgs e)
+
+        private void btnActu_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtNombreAlumno.Text) || string.IsNullOrWhiteSpace(txtApellidoAlumno.Text))
             {
@@ -72,12 +73,12 @@ namespace GestionAcademaDeMusica.Formularios.Alumnos
                 return;
             }
 
-            _alumno.NombreAlumno    = txtNombreAlumno.Text.Trim();
-            _alumno.ApellidoAlumno  = txtApellidoAlumno.Text.Trim();
+            _alumno.NombreAlumno = txtNombreAlumno.Text.Trim();
+            _alumno.ApellidoAlumno = txtApellidoAlumno.Text.Trim();
             _alumno.FechaNacimiento = dtpFechaAlumno.Value;
-            _alumno.TelefonoAlumno  = txtTelefonoAlumno.Text.Trim();
-            _alumno.EmailAlumno     = txtEmailAlumno.Text.Trim();
-            _alumno.ActivoAlumno    = chkEstadoAlumno.Checked;
+            _alumno.TelefonoAlumno = txtTelefonoAlumno.Text.Trim();
+            _alumno.EmailAlumno = txtEmailAlumno.Text.Trim();
+            _alumno.ActivoAlumno = chkEstadoAlumno.Checked;
 
             if (cmbInstrumentoAlumno.SelectedValue != null)
                 _alumno.IdInstrumento = (int)cmbInstrumentoAlumno.SelectedValue;

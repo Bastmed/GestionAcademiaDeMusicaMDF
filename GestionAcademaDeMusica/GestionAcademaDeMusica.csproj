@@ -237,6 +237,11 @@
     <None Include="Resources\icono_txt_contraseña.png" />
     <Content Include="Resources\epicardo.png" />
     <None Include="Resources\icono_musica.png" />
+    <None Include="Resources\icono_apellido.png" />
+    <None Include="Resources\icono_nombre.png" />
+    <None Include="Resources\icono_telefono.png" />
+    <None Include="Resources\icono_correo.png" />
+    <None Include="Resources\icono_marca.png" />
     <Content Include="Resources\logo_inicio_sesion.png" />
     <None Include="Resources\logo_inicio_sesion1.png" />
     <None Include="Resources\images-removebg-preview.png" />
