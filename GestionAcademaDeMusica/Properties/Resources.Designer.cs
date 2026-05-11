@@ -93,6 +93,16 @@ namespace GestionAcademaDeMusica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icono_dinero {
+            get {
+                object obj = ResourceManager.GetObject("icono_dinero", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icono_marca {
             get {
                 object obj = ResourceManager.GetObject("icono_marca", resourceCulture);
@@ -116,6 +126,26 @@ namespace GestionAcademaDeMusica.Properties {
         internal static System.Drawing.Bitmap icono_nombre {
             get {
                 object obj = ResourceManager.GetObject("icono_nombre", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icono_ojo {
+            get {
+                object obj = ResourceManager.GetObject("icono_ojo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icono_registro {
+            get {
+                object obj = ResourceManager.GetObject("icono_registro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +203,29 @@ namespace GestionAcademaDeMusica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_candado1 {
+            get {
+                object obj = ResourceManager.GetObject("logo_candado1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_inicio_sesion {
             get {
                 object obj = ResourceManager.GetObject("logo_inicio_sesion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_inicio_sesion1 {
+            get {
+                object obj = ResourceManager.GetObject("logo_inicio_sesion1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

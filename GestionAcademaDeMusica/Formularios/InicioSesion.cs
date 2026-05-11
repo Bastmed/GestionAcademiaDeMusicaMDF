@@ -16,7 +16,19 @@ namespace GestionAcademaDeMusica.Formularios
         public InicioSesion()
         {
             InitializeComponent();
+            picOjo.MouseDown += picOjo_MouseDown;
+            picOjo.MouseUp += picOjo_MouseUp;
         }
+
+        private void picOjo_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtContraseñaUsuario.PasswordChar = '\0';
+        }
+        private void picOjo_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtContraseñaUsuario.PasswordChar = '●';
+        }
+
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
             String usuario = "webo";
@@ -51,7 +63,6 @@ namespace GestionAcademaDeMusica.Formularios
             formRegistro.ShowDialog();
         }
 
-        
     }
 
 }

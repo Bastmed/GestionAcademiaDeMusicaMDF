@@ -232,6 +232,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>GestionMusica.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\logo_inicio_sesion2.png" />
     <None Include="Resources\logo_txt_nombre.png" />
     <None Include="Resources\logo_candado.png" />
     <None Include="Resources\icono_txt_contraseña.png" />
@@ -242,6 +243,10 @@
     <None Include="Resources\icono_telefono.png" />
     <None Include="Resources\icono_correo.png" />
     <None Include="Resources\icono_marca.png" />
+    <None Include="Resources\icono_dinero.png" />
+    <None Include="Resources\logo_candado1.png" />
+    <None Include="Resources\icono_ojo.png" />
+    <None Include="Resources\icono_registro.png" />
     <Content Include="Resources\logo_inicio_sesion.png" />
     <None Include="Resources\logo_inicio_sesion1.png" />
     <None Include="Resources\images-removebg-preview.png" />

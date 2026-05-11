@@ -145,9 +145,5 @@ namespace GestionAcademaDeMusica.Formularios.Profesores
 
         private void lblTarifaIVA_Click(object sender, EventArgs e) { }
 
-        private void ActualizarProfesor_Load_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -62,22 +62,22 @@
             // 
             this.cmbInstrumentoAlumno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.cmbInstrumentoAlumno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbInstrumentoAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbInstrumentoAlumno.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbInstrumentoAlumno.ForeColor = System.Drawing.Color.White;
             this.cmbInstrumentoAlumno.FormattingEnabled = true;
             this.cmbInstrumentoAlumno.Location = new System.Drawing.Point(487, 251);
             this.cmbInstrumentoAlumno.Name = "cmbInstrumentoAlumno";
-            this.cmbInstrumentoAlumno.Size = new System.Drawing.Size(121, 23);
+            this.cmbInstrumentoAlumno.Size = new System.Drawing.Size(121, 22);
             this.cmbInstrumentoAlumno.TabIndex = 32;
             // 
             // chkEstadoAlumno
             // 
             this.chkEstadoAlumno.AutoSize = true;
-            this.chkEstadoAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEstadoAlumno.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkEstadoAlumno.ForeColor = System.Drawing.Color.White;
             this.chkEstadoAlumno.Location = new System.Drawing.Point(487, 162);
             this.chkEstadoAlumno.Name = "chkEstadoAlumno";
-            this.chkEstadoAlumno.Size = new System.Drawing.Size(57, 19);
+            this.chkEstadoAlumno.Size = new System.Drawing.Size(57, 18);
             this.chkEstadoAlumno.TabIndex = 31;
             this.chkEstadoAlumno.Text = "Activo";
             this.chkEstadoAlumno.UseVisualStyleBackColor = true;
@@ -86,76 +86,76 @@
             // 
             this.txtEmailAlumno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.txtEmailAlumno.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmailAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmailAlumno.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailAlumno.ForeColor = System.Drawing.Color.White;
-            this.txtEmailAlumno.Location = new System.Drawing.Point(484, 81);
+            this.txtEmailAlumno.Location = new System.Drawing.Point(487, 72);
             this.txtEmailAlumno.Name = "txtEmailAlumno";
-            this.txtEmailAlumno.Size = new System.Drawing.Size(124, 14);
+            this.txtEmailAlumno.Size = new System.Drawing.Size(124, 15);
             this.txtEmailAlumno.TabIndex = 30;
             // 
             // txtTelefonoAlumno
             // 
             this.txtTelefonoAlumno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.txtTelefonoAlumno.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTelefonoAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefonoAlumno.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefonoAlumno.ForeColor = System.Drawing.Color.White;
             this.txtTelefonoAlumno.Location = new System.Drawing.Point(147, 343);
             this.txtTelefonoAlumno.Name = "txtTelefonoAlumno";
-            this.txtTelefonoAlumno.Size = new System.Drawing.Size(100, 14);
+            this.txtTelefonoAlumno.Size = new System.Drawing.Size(100, 15);
             this.txtTelefonoAlumno.TabIndex = 29;
             // 
             // lblInstrumentoAlumno
             // 
             this.lblInstrumentoAlumno.AutoSize = true;
-            this.lblInstrumentoAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInstrumentoAlumno.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInstrumentoAlumno.ForeColor = System.Drawing.Color.White;
             this.lblInstrumentoAlumno.Location = new System.Drawing.Point(484, 223);
             this.lblInstrumentoAlumno.Name = "lblInstrumentoAlumno";
-            this.lblInstrumentoAlumno.Size = new System.Drawing.Size(75, 15);
+            this.lblInstrumentoAlumno.Size = new System.Drawing.Size(71, 14);
             this.lblInstrumentoAlumno.TabIndex = 28;
             this.lblInstrumentoAlumno.Text = "Instrumento:";
             // 
             // lblEstadoAlumno
             // 
             this.lblEstadoAlumno.AutoSize = true;
-            this.lblEstadoAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstadoAlumno.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstadoAlumno.ForeColor = System.Drawing.Color.White;
             this.lblEstadoAlumno.Location = new System.Drawing.Point(484, 134);
             this.lblEstadoAlumno.Name = "lblEstadoAlumno";
-            this.lblEstadoAlumno.Size = new System.Drawing.Size(48, 15);
+            this.lblEstadoAlumno.Size = new System.Drawing.Size(44, 14);
             this.lblEstadoAlumno.TabIndex = 27;
             this.lblEstadoAlumno.Text = "Estado:";
             // 
             // lblEmailAlumno
             // 
             this.lblEmailAlumno.AutoSize = true;
-            this.lblEmailAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmailAlumno.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmailAlumno.ForeColor = System.Drawing.Color.White;
-            this.lblEmailAlumno.Location = new System.Drawing.Point(481, 46);
+            this.lblEmailAlumno.Location = new System.Drawing.Point(484, 37);
             this.lblEmailAlumno.Name = "lblEmailAlumno";
-            this.lblEmailAlumno.Size = new System.Drawing.Size(42, 15);
+            this.lblEmailAlumno.Size = new System.Drawing.Size(38, 14);
             this.lblEmailAlumno.TabIndex = 26;
             this.lblEmailAlumno.Text = "Email:";
             // 
             // lblTelefonoAlumno
             // 
             this.lblTelefonoAlumno.AutoSize = true;
-            this.lblTelefonoAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefonoAlumno.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefonoAlumno.ForeColor = System.Drawing.Color.White;
             this.lblTelefonoAlumno.Location = new System.Drawing.Point(144, 319);
             this.lblTelefonoAlumno.Name = "lblTelefonoAlumno";
-            this.lblTelefonoAlumno.Size = new System.Drawing.Size(58, 15);
+            this.lblTelefonoAlumno.Size = new System.Drawing.Size(53, 14);
             this.lblTelefonoAlumno.TabIndex = 25;
             this.lblTelefonoAlumno.Text = "Telefono:";
             // 
             // lblFechaAlumno
             // 
             this.lblFechaAlumno.AutoSize = true;
-            this.lblFechaAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaAlumno.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaAlumno.ForeColor = System.Drawing.Color.White;
             this.lblFechaAlumno.Location = new System.Drawing.Point(144, 214);
             this.lblFechaAlumno.Name = "lblFechaAlumno";
-            this.lblFechaAlumno.Size = new System.Drawing.Size(125, 15);
+            this.lblFechaAlumno.Size = new System.Drawing.Size(114, 14);
             this.lblFechaAlumno.TabIndex = 24;
             this.lblFechaAlumno.Text = "Fecha de nacimiento:";
             // 
@@ -171,43 +171,43 @@
             // 
             this.txtApellidoAlumno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.txtApellidoAlumno.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtApellidoAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidoAlumno.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidoAlumno.ForeColor = System.Drawing.Color.White;
             this.txtApellidoAlumno.Location = new System.Drawing.Point(144, 173);
             this.txtApellidoAlumno.Name = "txtApellidoAlumno";
-            this.txtApellidoAlumno.Size = new System.Drawing.Size(100, 14);
+            this.txtApellidoAlumno.Size = new System.Drawing.Size(100, 15);
             this.txtApellidoAlumno.TabIndex = 22;
             // 
             // txtNombreAlumno
             // 
             this.txtNombreAlumno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.txtNombreAlumno.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombreAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreAlumno.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreAlumno.ForeColor = System.Drawing.Color.White;
             this.txtNombreAlumno.Location = new System.Drawing.Point(144, 72);
             this.txtNombreAlumno.Name = "txtNombreAlumno";
-            this.txtNombreAlumno.Size = new System.Drawing.Size(100, 14);
+            this.txtNombreAlumno.Size = new System.Drawing.Size(100, 15);
             this.txtNombreAlumno.TabIndex = 21;
             // 
             // lblApellidoAlumno
             // 
             this.lblApellidoAlumno.AutoSize = true;
-            this.lblApellidoAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellidoAlumno.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellidoAlumno.ForeColor = System.Drawing.Color.White;
             this.lblApellidoAlumno.Location = new System.Drawing.Point(141, 126);
             this.lblApellidoAlumno.Name = "lblApellidoAlumno";
-            this.lblApellidoAlumno.Size = new System.Drawing.Size(54, 15);
+            this.lblApellidoAlumno.Size = new System.Drawing.Size(50, 14);
             this.lblApellidoAlumno.TabIndex = 20;
             this.lblApellidoAlumno.Text = "Apellido:";
             // 
             // lblNombreAlumno
             // 
             this.lblNombreAlumno.AutoSize = true;
-            this.lblNombreAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreAlumno.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreAlumno.ForeColor = System.Drawing.Color.White;
             this.lblNombreAlumno.Location = new System.Drawing.Point(141, 37);
             this.lblNombreAlumno.Name = "lblNombreAlumno";
-            this.lblNombreAlumno.Size = new System.Drawing.Size(55, 15);
+            this.lblNombreAlumno.Size = new System.Drawing.Size(50, 14);
             this.lblNombreAlumno.TabIndex = 19;
             this.lblNombreAlumno.Text = "Nombre:";
             // 
@@ -238,7 +238,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.panel4.Location = new System.Drawing.Point(484, 94);
+            this.panel4.Location = new System.Drawing.Point(487, 85);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(160, 2);
             this.panel4.TabIndex = 37;
@@ -291,7 +291,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_correo;
-            this.pictureBox4.Location = new System.Drawing.Point(618, 67);
+            this.pictureBox4.Location = new System.Drawing.Point(621, 58);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(26, 26);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -303,12 +303,12 @@
             this.cmbTelefonoActAlumno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.cmbTelefonoActAlumno.DropDownWidth = 121;
             this.cmbTelefonoActAlumno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbTelefonoActAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTelefonoActAlumno.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTelefonoActAlumno.ForeColor = System.Drawing.Color.White;
             this.cmbTelefonoActAlumno.FormattingEnabled = true;
             this.cmbTelefonoActAlumno.Location = new System.Drawing.Point(12, 337);
             this.cmbTelefonoActAlumno.Name = "cmbTelefonoActAlumno";
-            this.cmbTelefonoActAlumno.Size = new System.Drawing.Size(109, 23);
+            this.cmbTelefonoActAlumno.Size = new System.Drawing.Size(109, 22);
             this.cmbTelefonoActAlumno.TabIndex = 32;
             // 
             // ActualizarAlumno

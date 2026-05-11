@@ -15,6 +15,16 @@ namespace GestionAcademaDeMusica.Formularios
         public Registro()
         {
             InitializeComponent();
+            picOjo.MouseDown += picOjo_MouseDown;
+            picOjo.MouseUp += picOjo_MouseUp;
+        }
+        private void picOjo_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtContraseñaUsuario.PasswordChar = '\0';
+        }
+        private void picOjo_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtContraseñaUsuario.PasswordChar = '●';
         }
 
         private void Registro_Load(object sender, EventArgs e)

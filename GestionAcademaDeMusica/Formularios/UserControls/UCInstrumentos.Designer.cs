@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -50,7 +50,7 @@
             this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.btnEliminar.FlatAppearance.BorderSize = 2;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.Location = new System.Drawing.Point(866, 146);
             this.btnEliminar.Name = "btnEliminar";
@@ -67,7 +67,7 @@
             this.btnActualizar.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.btnActualizar.FlatAppearance.BorderSize = 2;
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActualizar.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnActualizar.ForeColor = System.Drawing.Color.White;
             this.btnActualizar.Location = new System.Drawing.Point(866, 109);
             this.btnActualizar.Name = "btnActualizar";
@@ -84,7 +84,7 @@
             this.btnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.btnAgregar.FlatAppearance.BorderSize = 2;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
             this.btnAgregar.Location = new System.Drawing.Point(866, 72);
             this.btnAgregar.Name = "btnAgregar";
@@ -102,14 +102,14 @@
             this.dgvInstrumentos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvInstrumentos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvInstrumentos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Roboto SemiCondensed", 9.75F);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvInstrumentos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvInstrumentos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvInstrumentos.ColumnHeadersHeight = 35;
             this.dgvInstrumentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvInstrumentos.EnableHeadersVisualStyles = false;
@@ -118,20 +118,20 @@
             this.dgvInstrumentos.Name = "dgvInstrumentos";
             this.dgvInstrumentos.ReadOnly = true;
             this.dgvInstrumentos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Roboto SemiCondensed", 9.75F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvInstrumentos.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvInstrumentos.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvInstrumentos.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvInstrumentos.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvInstrumentos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvInstrumentos.Size = new System.Drawing.Size(842, 294);
             this.dgvInstrumentos.TabIndex = 4;
@@ -139,7 +139,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel3.Location = new System.Drawing.Point(119, 53);
+            this.panel3.Location = new System.Drawing.Point(135, 54);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(289, 2);
             this.panel3.TabIndex = 12;
@@ -147,11 +147,11 @@
             // lblBuscar
             // 
             this.lblBuscar.AutoSize = true;
-            this.lblBuscar.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblBuscar.ForeColor = System.Drawing.Color.White;
             this.lblBuscar.Location = new System.Drawing.Point(19, 41);
             this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(100, 14);
+            this.lblBuscar.Size = new System.Drawing.Size(110, 15);
             this.lblBuscar.TabIndex = 11;
             this.lblBuscar.Text = "Ingrese el nombre:";
             // 
@@ -159,11 +159,11 @@
             // 
             this.txtBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.txtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBuscar.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txtBuscar.ForeColor = System.Drawing.Color.White;
-            this.txtBuscar.Location = new System.Drawing.Point(119, 40);
+            this.txtBuscar.Location = new System.Drawing.Point(135, 39);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(289, 15);
+            this.txtBuscar.Size = new System.Drawing.Size(289, 14);
             this.txtBuscar.TabIndex = 10;
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
