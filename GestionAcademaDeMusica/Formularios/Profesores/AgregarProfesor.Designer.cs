@@ -31,6 +31,7 @@
             this.lblEstadoAgrProfe = new System.Windows.Forms.Label();
             this.chkEstadoAgrProfe = new System.Windows.Forms.CheckBox();
             this.txtTarifaAgrProfe = new System.Windows.Forms.TextBox();
+            this.cmbEspecialidadAgrProfe = new System.Windows.Forms.ComboBox();
             this.txtEmailAgrProfe = new System.Windows.Forms.TextBox();
             this.txtTelefonoAgrProfe = new System.Windows.Forms.TextBox();
             this.txtApellidoAgrProfe = new System.Windows.Forms.TextBox();
@@ -54,8 +55,6 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnRegistrarPro = new GestionAcademaDeMusica.Model.BotonRedondo();
-            this.clbEspecialidadesAgrProfe = new System.Windows.Forms.CheckedListBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -79,7 +78,7 @@
             this.chkEstadoAgrProfe.AutoSize = true;
             this.chkEstadoAgrProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkEstadoAgrProfe.Location = new System.Drawing.Point(741, 235);
-            this.chkEstadoAgrProfe.Margin = new System.Windows.Forms.Padding(4);
+            this.chkEstadoAgrProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkEstadoAgrProfe.Name = "chkEstadoAgrProfe";
             this.chkEstadoAgrProfe.Size = new System.Drawing.Size(70, 22);
             this.chkEstadoAgrProfe.TabIndex = 26;
@@ -93,11 +92,47 @@
             this.txtTarifaAgrProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTarifaAgrProfe.ForeColor = System.Drawing.Color.White;
             this.txtTarifaAgrProfe.Location = new System.Drawing.Point(741, 126);
-            this.txtTarifaAgrProfe.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTarifaAgrProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTarifaAgrProfe.Name = "txtTarifaAgrProfe";
             this.txtTarifaAgrProfe.Size = new System.Drawing.Size(133, 17);
             this.txtTarifaAgrProfe.TabIndex = 25;
             this.txtTarifaAgrProfe.TextChanged += new System.EventHandler(this.txtTarifaAgrProfe_TextChanged);
+            // 
+            // cmbEspecialidadAgrProfe
+            // 
+            this.cmbEspecialidadAgrProfe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.cmbEspecialidadAgrProfe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbEspecialidadAgrProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbEspecialidadAgrProfe.ForeColor = System.Drawing.Color.White;
+            this.cmbEspecialidadAgrProfe.FormattingEnabled = true;
+            this.cmbEspecialidadAgrProfe.Items.AddRange(new object[] {
+            "Guitarra Clásica",
+            "Guitarra Eléctrica",
+            "Bajo Eléctrico",
+            "Piano",
+            "Violín",
+            "Violoncello",
+            "Contrabajo",
+            "Flauta Traversa",
+            "Clarinete",
+            "Saxofón",
+            "Trompeta",
+            "Trombón",
+            "Percusión Clásica",
+            "Batería",
+            "Arpa",
+            "Canto Lírico",
+            "Canto Popular",
+            "Charango",
+            "Quena",
+            "Teoría Musical y Solfeo",
+            "Composición",
+            "Dirección Coral"});
+            this.cmbEspecialidadAgrProfe.Location = new System.Drawing.Point(417, 119);
+            this.cmbEspecialidadAgrProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbEspecialidadAgrProfe.Name = "cmbEspecialidadAgrProfe";
+            this.cmbEspecialidadAgrProfe.Size = new System.Drawing.Size(160, 26);
+            this.cmbEspecialidadAgrProfe.TabIndex = 24;
             // 
             // txtEmailAgrProfe
             // 
@@ -106,7 +141,7 @@
             this.txtEmailAgrProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailAgrProfe.ForeColor = System.Drawing.Color.White;
             this.txtEmailAgrProfe.Location = new System.Drawing.Point(149, 459);
-            this.txtEmailAgrProfe.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmailAgrProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEmailAgrProfe.Name = "txtEmailAgrProfe";
             this.txtEmailAgrProfe.Size = new System.Drawing.Size(165, 17);
             this.txtEmailAgrProfe.TabIndex = 23;
@@ -118,10 +153,11 @@
             this.txtTelefonoAgrProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefonoAgrProfe.ForeColor = System.Drawing.Color.White;
             this.txtTelefonoAgrProfe.Location = new System.Drawing.Point(149, 350);
-            this.txtTelefonoAgrProfe.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTelefonoAgrProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTelefonoAgrProfe.Name = "txtTelefonoAgrProfe";
             this.txtTelefonoAgrProfe.Size = new System.Drawing.Size(133, 17);
             this.txtTelefonoAgrProfe.TabIndex = 22;
+            this.txtTelefonoAgrProfe.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefonoAgrProfe_KeyPress);
             // 
             // txtApellidoAgrProfe
             // 
@@ -130,10 +166,11 @@
             this.txtApellidoAgrProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidoAgrProfe.ForeColor = System.Drawing.Color.White;
             this.txtApellidoAgrProfe.Location = new System.Drawing.Point(149, 239);
-            this.txtApellidoAgrProfe.Margin = new System.Windows.Forms.Padding(4);
+            this.txtApellidoAgrProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtApellidoAgrProfe.Name = "txtApellidoAgrProfe";
             this.txtApellidoAgrProfe.Size = new System.Drawing.Size(133, 17);
             this.txtApellidoAgrProfe.TabIndex = 21;
+            this.txtApellidoAgrProfe.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellidoAgrProfe_KeyPress);
             // 
             // txtNombreAgrProfe
             // 
@@ -142,10 +179,11 @@
             this.txtNombreAgrProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreAgrProfe.ForeColor = System.Drawing.Color.White;
             this.txtNombreAgrProfe.Location = new System.Drawing.Point(149, 126);
-            this.txtNombreAgrProfe.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreAgrProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombreAgrProfe.Name = "txtNombreAgrProfe";
             this.txtNombreAgrProfe.Size = new System.Drawing.Size(133, 17);
             this.txtNombreAgrProfe.TabIndex = 20;
+            this.txtNombreAgrProfe.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreAgrProfe_KeyPress);
             // 
             // lblTarifaAgrProfe
             // 
@@ -231,7 +269,7 @@
             this.cmbTelefonoAgrProfesor.ForeColor = System.Drawing.Color.White;
             this.cmbTelefonoAgrProfesor.FormattingEnabled = true;
             this.cmbTelefonoAgrProfesor.Location = new System.Drawing.Point(16, 341);
-            this.cmbTelefonoAgrProfesor.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbTelefonoAgrProfesor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbTelefonoAgrProfesor.Name = "cmbTelefonoAgrProfesor";
             this.cmbTelefonoAgrProfesor.Size = new System.Drawing.Size(124, 26);
             this.cmbTelefonoAgrProfesor.TabIndex = 31;
@@ -240,7 +278,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.DarkGray;
             this.panel3.Location = new System.Drawing.Point(741, 143);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(181, 2);
             this.panel3.TabIndex = 43;
@@ -249,7 +287,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkGray;
             this.panel1.Location = new System.Drawing.Point(149, 143);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(181, 2);
             this.panel1.TabIndex = 44;
@@ -258,7 +296,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkGray;
             this.panel2.Location = new System.Drawing.Point(149, 255);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(181, 2);
             this.panel2.TabIndex = 45;
@@ -267,7 +305,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.DarkGray;
             this.panel4.Location = new System.Drawing.Point(149, 366);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(181, 2);
             this.panel4.TabIndex = 46;
@@ -276,7 +314,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.DarkGray;
             this.panel5.Location = new System.Drawing.Point(149, 475);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(213, 2);
             this.panel5.TabIndex = 47;
@@ -285,7 +323,7 @@
             // 
             this.pictureBox2.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_nombre;
             this.pictureBox2.Location = new System.Drawing.Point(296, 110);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(35, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -296,7 +334,7 @@
             // 
             this.pictureBox1.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_apellido;
             this.pictureBox1.Location = new System.Drawing.Point(291, 223);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -307,7 +345,7 @@
             // 
             this.pictureBox3.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_telefono;
             this.pictureBox3.Location = new System.Drawing.Point(296, 332);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(35, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -318,7 +356,7 @@
             // 
             this.pictureBox4.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_correo;
             this.pictureBox4.Location = new System.Drawing.Point(328, 442);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(35, 32);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -329,7 +367,7 @@
             // 
             this.pictureBox5.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_dinero;
             this.pictureBox5.Location = new System.Drawing.Point(883, 110);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(40, 32);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -344,56 +382,12 @@
             this.btnRegistrarPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarPro.ForeColor = System.Drawing.Color.White;
             this.btnRegistrarPro.Location = new System.Drawing.Point(749, 351);
-            this.btnRegistrarPro.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegistrarPro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegistrarPro.Name = "btnRegistrarPro";
             this.btnRegistrarPro.Size = new System.Drawing.Size(104, 28);
             this.btnRegistrarPro.TabIndex = 41;
             this.btnRegistrarPro.Text = "Registrar";
             this.btnRegistrarPro.UseVisualStyleBackColor = false;
-            // 
-            // clbEspecialidadesAgrProfe
-            // 
-            this.clbEspecialidadesAgrProfe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.clbEspecialidadesAgrProfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.clbEspecialidadesAgrProfe.ForeColor = System.Drawing.Color.White;
-            this.clbEspecialidadesAgrProfe.FormattingEnabled = true;
-            this.clbEspecialidadesAgrProfe.Items.AddRange(new object[] {
-            "Guitarra Clásica",
-            "Guitarra Eléctrica",
-            "Bajo Eléctrico",
-            "Piano",
-            "Violín",
-            "Violoncello",
-            "Contrabajo",
-            "Flauta Traversa",
-            "Clarinete",
-            "Saxofón",
-            "Trompeta",
-            "Trombón",
-            "Percusión Clásica",
-            "Batería",
-            "Arpa",
-            "Canto Lírico",
-            "Canto Popular",
-            "Charango",
-            "Quena",
-            "Teoría Musical y Solfeo",
-            "Composición",
-            "Dirección Coral"});
-            this.clbEspecialidadesAgrProfe.Location = new System.Drawing.Point(417, 127);
-            this.clbEspecialidadesAgrProfe.Name = "clbEspecialidadesAgrProfe";
-            this.clbEspecialidadesAgrProfe.Size = new System.Drawing.Size(256, 357);
-            this.clbEspecialidadesAgrProfe.TabIndex = 57;
-            this.clbEspecialidadesAgrProfe.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.clbEspecialidadesAgrProfe_ItemCheck);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(515, 93);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 16);
-            this.label1.TabIndex = 60;
-            this.label1.Text = "(Máx. 7 especialidades)";
             // 
             // AgregarProfesor
             // 
@@ -401,8 +395,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.clbEspecialidadesAgrProfe);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -419,6 +411,7 @@
             this.Controls.Add(this.lblEstadoAgrProfe);
             this.Controls.Add(this.chkEstadoAgrProfe);
             this.Controls.Add(this.txtTarifaAgrProfe);
+            this.Controls.Add(this.cmbEspecialidadAgrProfe);
             this.Controls.Add(this.txtEmailAgrProfe);
             this.Controls.Add(this.txtTelefonoAgrProfe);
             this.Controls.Add(this.txtApellidoAgrProfe);
@@ -430,7 +423,7 @@
             this.Controls.Add(this.lblApellidoAgrProfe);
             this.Controls.Add(this.lblNombreAgrProfe);
             this.ForeColor = System.Drawing.Color.White;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AgregarProfesor";
             this.Text = "AgregarProfesor";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -448,6 +441,7 @@
         private System.Windows.Forms.Label lblEstadoAgrProfe;
         private System.Windows.Forms.CheckBox chkEstadoAgrProfe;
         private System.Windows.Forms.TextBox txtTarifaAgrProfe;
+        private System.Windows.Forms.ComboBox cmbEspecialidadAgrProfe;
         private System.Windows.Forms.TextBox txtEmailAgrProfe;
         private System.Windows.Forms.TextBox txtTelefonoAgrProfe;
         private System.Windows.Forms.TextBox txtApellidoAgrProfe;
@@ -471,7 +465,5 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.CheckedListBox clbEspecialidadesAgrProfe;
-        private System.Windows.Forms.Label label1;
     }
 }
