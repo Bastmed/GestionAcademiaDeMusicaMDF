@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
@@ -85,14 +86,29 @@ namespace GestionAcademaDeMusica.Formularios.Profesores
                 string prefijo = cmbTelefonoAgrProfesor.SelectedItem?.ToString().Split(' ')[0] ?? "";
                 telefonoFinal = prefijo + " " + txtTelefonoAgrProfe.Text.Trim();
             }
+            
+            List<string> especialidadesSeleccionadas = new List<string>();
 
+            
+            foreach (var item in clbEspecialidadesAgrProfe.CheckedItems)
+            {
+                especialidadesSeleccionadas.Add(item.ToString());
+            }
+
+            if (especialidadesSeleccionadas.Count == 0)
+            {
+                MessageBox.Show("Debe seleccionar al menos una especialidad.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string especialidadesUnidas = string.Join(", ", especialidadesSeleccionadas);
             Profesor nuevoProfesor = new Profesor
             {
                 NombreProfesor = txtNombreAgrProfe.Text.Trim(),
                 ApellidoProfesor = txtApellidoAgrProfe.Text.Trim(),
                 TelefonoProfesor = telefonoFinal,
                 EmailProfesor = txtEmailAgrProfe.Text.Trim(),
-                Especialidad = cmbEspecialidadAgrProfe.Text.Trim(),
+                Especialidad = especialidadesUnidas,
                 TarifaHora = tarifa,
                 ActivoProfesor = chkEstadoAgrProfe.Checked
             };

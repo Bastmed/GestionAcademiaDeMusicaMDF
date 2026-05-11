@@ -38,7 +38,6 @@
             this.txtApellidoActProfe = new System.Windows.Forms.TextBox();
             this.txtTelefonoActProfe = new System.Windows.Forms.TextBox();
             this.txtEmailActProfe = new System.Windows.Forms.TextBox();
-            this.cmbEspecialidadActProfe = new System.Windows.Forms.ComboBox();
             this.txtTarifaActProfe = new System.Windows.Forms.TextBox();
             this.chkEstadoActProfe = new System.Windows.Forms.CheckBox();
             this.lblEstadoActProfe = new System.Windows.Forms.Label();
@@ -55,6 +54,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.clbEspecialidadesActProfe = new System.Windows.Forms.CheckedListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -65,60 +65,66 @@
             // lblNombreActProfe
             // 
             this.lblNombreActProfe.AutoSize = true;
-            this.lblNombreActProfe.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreActProfe.Location = new System.Drawing.Point(109, 74);
+            this.lblNombreActProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreActProfe.Location = new System.Drawing.Point(145, 91);
+            this.lblNombreActProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombreActProfe.Name = "lblNombreActProfe";
-            this.lblNombreActProfe.Size = new System.Drawing.Size(50, 14);
+            this.lblNombreActProfe.Size = new System.Drawing.Size(66, 18);
             this.lblNombreActProfe.TabIndex = 0;
             this.lblNombreActProfe.Text = "Nombre:";
             // 
             // lblApellidoActProfe
             // 
             this.lblApellidoActProfe.AutoSize = true;
-            this.lblApellidoActProfe.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellidoActProfe.Location = new System.Drawing.Point(109, 163);
+            this.lblApellidoActProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellidoActProfe.Location = new System.Drawing.Point(145, 201);
+            this.lblApellidoActProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApellidoActProfe.Name = "lblApellidoActProfe";
-            this.lblApellidoActProfe.Size = new System.Drawing.Size(50, 14);
+            this.lblApellidoActProfe.Size = new System.Drawing.Size(63, 18);
             this.lblApellidoActProfe.TabIndex = 1;
             this.lblApellidoActProfe.Text = "Apellido:";
             // 
             // lblTelefonoActProfe
             // 
             this.lblTelefonoActProfe.AutoSize = true;
-            this.lblTelefonoActProfe.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefonoActProfe.Location = new System.Drawing.Point(109, 249);
+            this.lblTelefonoActProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefonoActProfe.Location = new System.Drawing.Point(145, 306);
+            this.lblTelefonoActProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTelefonoActProfe.Name = "lblTelefonoActProfe";
-            this.lblTelefonoActProfe.Size = new System.Drawing.Size(53, 14);
+            this.lblTelefonoActProfe.Size = new System.Drawing.Size(70, 18);
             this.lblTelefonoActProfe.TabIndex = 2;
             this.lblTelefonoActProfe.Text = "Telefono:";
             // 
             // lblEmailActProfe
             // 
             this.lblEmailActProfe.AutoSize = true;
-            this.lblEmailActProfe.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmailActProfe.Location = new System.Drawing.Point(109, 342);
+            this.lblEmailActProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmailActProfe.Location = new System.Drawing.Point(145, 421);
+            this.lblEmailActProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmailActProfe.Name = "lblEmailActProfe";
-            this.lblEmailActProfe.Size = new System.Drawing.Size(38, 14);
+            this.lblEmailActProfe.Size = new System.Drawing.Size(49, 18);
             this.lblEmailActProfe.TabIndex = 3;
             this.lblEmailActProfe.Text = "Email:";
             // 
             // lblEspecialidadActProfe
             // 
             this.lblEspecialidadActProfe.AutoSize = true;
-            this.lblEspecialidadActProfe.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEspecialidadActProfe.Location = new System.Drawing.Point(310, 74);
+            this.lblEspecialidadActProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEspecialidadActProfe.Location = new System.Drawing.Point(413, 91);
+            this.lblEspecialidadActProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEspecialidadActProfe.Name = "lblEspecialidadActProfe";
-            this.lblEspecialidadActProfe.Size = new System.Drawing.Size(73, 14);
+            this.lblEspecialidadActProfe.Size = new System.Drawing.Size(95, 18);
             this.lblEspecialidadActProfe.TabIndex = 4;
             this.lblEspecialidadActProfe.Text = "Especialidad:";
             // 
             // lblTarifaActProfe
             // 
             this.lblTarifaActProfe.AutoSize = true;
-            this.lblTarifaActProfe.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTarifaActProfe.Location = new System.Drawing.Point(553, 74);
+            this.lblTarifaActProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTarifaActProfe.Location = new System.Drawing.Point(737, 91);
+            this.lblTarifaActProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTarifaActProfe.Name = "lblTarifaActProfe";
-            this.lblTarifaActProfe.Size = new System.Drawing.Size(39, 14);
+            this.lblTarifaActProfe.Size = new System.Drawing.Size(49, 18);
             this.lblTarifaActProfe.TabIndex = 5;
             this.lblTarifaActProfe.Text = "Tarifa:";
             // 
@@ -126,54 +132,232 @@
             // 
             this.txtNombreActProfe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.txtNombreActProfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombreActProfe.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreActProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreActProfe.ForeColor = System.Drawing.Color.White;
-            this.txtNombreActProfe.Location = new System.Drawing.Point(112, 105);
+            this.txtNombreActProfe.Location = new System.Drawing.Point(149, 129);
+            this.txtNombreActProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombreActProfe.Name = "txtNombreActProfe";
-            this.txtNombreActProfe.Size = new System.Drawing.Size(100, 15);
+            this.txtNombreActProfe.Size = new System.Drawing.Size(133, 17);
             this.txtNombreActProfe.TabIndex = 6;
             // 
             // txtApellidoActProfe
             // 
             this.txtApellidoActProfe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.txtApellidoActProfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtApellidoActProfe.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidoActProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidoActProfe.ForeColor = System.Drawing.Color.White;
-            this.txtApellidoActProfe.Location = new System.Drawing.Point(112, 199);
+            this.txtApellidoActProfe.Location = new System.Drawing.Point(149, 245);
+            this.txtApellidoActProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtApellidoActProfe.Name = "txtApellidoActProfe";
-            this.txtApellidoActProfe.Size = new System.Drawing.Size(100, 15);
+            this.txtApellidoActProfe.Size = new System.Drawing.Size(133, 17);
             this.txtApellidoActProfe.TabIndex = 7;
             // 
             // txtTelefonoActProfe
             // 
             this.txtTelefonoActProfe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.txtTelefonoActProfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTelefonoActProfe.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefonoActProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefonoActProfe.ForeColor = System.Drawing.Color.White;
-            this.txtTelefonoActProfe.Location = new System.Drawing.Point(112, 283);
+            this.txtTelefonoActProfe.Location = new System.Drawing.Point(149, 348);
+            this.txtTelefonoActProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTelefonoActProfe.Name = "txtTelefonoActProfe";
-            this.txtTelefonoActProfe.Size = new System.Drawing.Size(100, 15);
+            this.txtTelefonoActProfe.Size = new System.Drawing.Size(133, 17);
             this.txtTelefonoActProfe.TabIndex = 8;
             // 
             // txtEmailActProfe
             // 
             this.txtEmailActProfe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.txtEmailActProfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmailActProfe.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmailActProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailActProfe.ForeColor = System.Drawing.Color.White;
-            this.txtEmailActProfe.Location = new System.Drawing.Point(112, 379);
+            this.txtEmailActProfe.Location = new System.Drawing.Point(149, 466);
+            this.txtEmailActProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEmailActProfe.Name = "txtEmailActProfe";
-            this.txtEmailActProfe.Size = new System.Drawing.Size(124, 15);
+            this.txtEmailActProfe.Size = new System.Drawing.Size(165, 17);
             this.txtEmailActProfe.TabIndex = 9;
             // 
-            // cmbEspecialidadActProfe
+            // txtTarifaActProfe
             // 
-            this.cmbEspecialidadActProfe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.cmbEspecialidadActProfe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbEspecialidadActProfe.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbEspecialidadActProfe.ForeColor = System.Drawing.Color.White;
-            this.cmbEspecialidadActProfe.FormattingEnabled = true;
-            this.cmbEspecialidadActProfe.Items.AddRange(new object[] {
+            this.txtTarifaActProfe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.txtTarifaActProfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTarifaActProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTarifaActProfe.ForeColor = System.Drawing.Color.White;
+            this.txtTarifaActProfe.Location = new System.Drawing.Point(741, 129);
+            this.txtTarifaActProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTarifaActProfe.Name = "txtTarifaActProfe";
+            this.txtTarifaActProfe.Size = new System.Drawing.Size(133, 17);
+            this.txtTarifaActProfe.TabIndex = 41;
+            this.txtTarifaActProfe.TextChanged += new System.EventHandler(this.txtTarifaActProfe_TextChanged);
+            // 
+            // chkEstadoActProfe
+            // 
+            this.chkEstadoActProfe.AutoSize = true;
+            this.chkEstadoActProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEstadoActProfe.Location = new System.Drawing.Point(741, 241);
+            this.chkEstadoActProfe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkEstadoActProfe.Name = "chkEstadoActProfe";
+            this.chkEstadoActProfe.Size = new System.Drawing.Size(70, 22);
+            this.chkEstadoActProfe.TabIndex = 12;
+            this.chkEstadoActProfe.Text = "Activo";
+            this.chkEstadoActProfe.UseVisualStyleBackColor = true;
+            // 
+            // lblEstadoActProfe
+            // 
+            this.lblEstadoActProfe.AutoSize = true;
+            this.lblEstadoActProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstadoActProfe.Location = new System.Drawing.Point(737, 219);
+            this.lblEstadoActProfe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEstadoActProfe.Name = "lblEstadoActProfe";
+            this.lblEstadoActProfe.Size = new System.Drawing.Size(59, 18);
+            this.lblEstadoActProfe.TabIndex = 13;
+            this.lblEstadoActProfe.Text = "Estado:";
+            // 
+            // lblTarifaIVA
+            // 
+            this.lblTarifaIVA.AutoSize = true;
+            this.lblTarifaIVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTarifaIVA.Location = new System.Drawing.Point(737, 151);
+            this.lblTarifaIVA.Name = "lblTarifaIVA";
+            this.lblTarifaIVA.Size = new System.Drawing.Size(128, 18);
+            this.lblTarifaIVA.TabIndex = 31;
+            this.lblTarifaIVA.Text = "Con IVA (19%): $0";
+            this.lblTarifaIVA.Click += new System.EventHandler(this.lblTarifaIVA_Click);
+            // 
+            // cmbTelefonoActProfesor
+            // 
+            this.cmbTelefonoActProfesor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.cmbTelefonoActProfesor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbTelefonoActProfesor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTelefonoActProfesor.ForeColor = System.Drawing.Color.White;
+            this.cmbTelefonoActProfesor.FormattingEnabled = true;
+            this.cmbTelefonoActProfesor.Location = new System.Drawing.Point(16, 341);
+            this.cmbTelefonoActProfesor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbTelefonoActProfesor.Name = "cmbTelefonoActProfesor";
+            this.cmbTelefonoActProfesor.Size = new System.Drawing.Size(124, 26);
+            this.cmbTelefonoActProfesor.TabIndex = 32;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.DarkGray;
+            this.panel3.Location = new System.Drawing.Point(741, 145);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(181, 2);
+            this.panel3.TabIndex = 42;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkGray;
+            this.panel1.Location = new System.Drawing.Point(149, 145);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(181, 2);
+            this.panel1.TabIndex = 43;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DarkGray;
+            this.panel2.Location = new System.Drawing.Point(149, 261);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(181, 2);
+            this.panel2.TabIndex = 44;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.DarkGray;
+            this.panel4.Location = new System.Drawing.Point(149, 366);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(181, 2);
+            this.panel4.TabIndex = 45;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.DarkGray;
+            this.panel5.Location = new System.Drawing.Point(149, 482);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(213, 2);
+            this.panel5.TabIndex = 46;
+            // 
+            // btnActualizarPro
+            // 
+            this.btnActualizarPro.BackColor = System.Drawing.Color.DarkGray;
+            this.btnActualizarPro.FlatAppearance.BorderSize = 0;
+            this.btnActualizarPro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizarPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarPro.ForeColor = System.Drawing.Color.White;
+            this.btnActualizarPro.Location = new System.Drawing.Point(741, 354);
+            this.btnActualizarPro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnActualizarPro.Name = "btnActualizarPro";
+            this.btnActualizarPro.Size = new System.Drawing.Size(104, 28);
+            this.btnActualizarPro.TabIndex = 40;
+            this.btnActualizarPro.Text = "Actualizar";
+            this.btnActualizarPro.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_dinero;
+            this.pictureBox5.Location = new System.Drawing.Point(883, 112);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(40, 32);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 55;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_correo;
+            this.pictureBox4.Location = new System.Drawing.Point(328, 449);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 54;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_telefono;
+            this.pictureBox3.Location = new System.Drawing.Point(296, 332);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 53;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_apellido;
+            this.pictureBox1.Location = new System.Drawing.Point(291, 229);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 31);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 52;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_nombre;
+            this.pictureBox2.Location = new System.Drawing.Point(296, 112);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 51;
+            this.pictureBox2.TabStop = false;
+            // 
+            // clbEspecialidadesActProfe
+            // 
+            this.clbEspecialidadesActProfe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.clbEspecialidadesActProfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.clbEspecialidadesActProfe.ForeColor = System.Drawing.Color.White;
+            this.clbEspecialidadesActProfe.FormattingEnabled = true;
+            this.clbEspecialidadesActProfe.Items.AddRange(new object[] {
             "Guitarra Clásica",
             "Guitarra Eléctrica",
             "Bajo Eléctrico",
@@ -196,178 +380,18 @@
             "Teoría Musical y Solfeo",
             "Composición",
             "Dirección Coral"});
-            this.cmbEspecialidadActProfe.Location = new System.Drawing.Point(313, 98);
-            this.cmbEspecialidadActProfe.Name = "cmbEspecialidadActProfe";
-            this.cmbEspecialidadActProfe.Size = new System.Drawing.Size(121, 22);
-            this.cmbEspecialidadActProfe.TabIndex = 10;
-            // 
-            // txtTarifaActProfe
-            // 
-            this.txtTarifaActProfe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.txtTarifaActProfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTarifaActProfe.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTarifaActProfe.ForeColor = System.Drawing.Color.White;
-            this.txtTarifaActProfe.Location = new System.Drawing.Point(556, 105);
-            this.txtTarifaActProfe.Name = "txtTarifaActProfe";
-            this.txtTarifaActProfe.Size = new System.Drawing.Size(100, 15);
-            this.txtTarifaActProfe.TabIndex = 41;
-            this.txtTarifaActProfe.TextChanged += new System.EventHandler(this.txtTarifaActProfe_TextChanged);
-            // 
-            // chkEstadoActProfe
-            // 
-            this.chkEstadoActProfe.AutoSize = true;
-            this.chkEstadoActProfe.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkEstadoActProfe.Location = new System.Drawing.Point(556, 196);
-            this.chkEstadoActProfe.Name = "chkEstadoActProfe";
-            this.chkEstadoActProfe.Size = new System.Drawing.Size(57, 18);
-            this.chkEstadoActProfe.TabIndex = 12;
-            this.chkEstadoActProfe.Text = "Activo";
-            this.chkEstadoActProfe.UseVisualStyleBackColor = true;
-            // 
-            // lblEstadoActProfe
-            // 
-            this.lblEstadoActProfe.AutoSize = true;
-            this.lblEstadoActProfe.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstadoActProfe.Location = new System.Drawing.Point(553, 178);
-            this.lblEstadoActProfe.Name = "lblEstadoActProfe";
-            this.lblEstadoActProfe.Size = new System.Drawing.Size(44, 14);
-            this.lblEstadoActProfe.TabIndex = 13;
-            this.lblEstadoActProfe.Text = "Estado:";
-            // 
-            // lblTarifaIVA
-            // 
-            this.lblTarifaIVA.AutoSize = true;
-            this.lblTarifaIVA.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTarifaIVA.Location = new System.Drawing.Point(553, 123);
-            this.lblTarifaIVA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTarifaIVA.Name = "lblTarifaIVA";
-            this.lblTarifaIVA.Size = new System.Drawing.Size(95, 14);
-            this.lblTarifaIVA.TabIndex = 31;
-            this.lblTarifaIVA.Text = "Con IVA (19%): $0";
-            this.lblTarifaIVA.Click += new System.EventHandler(this.lblTarifaIVA_Click);
-            // 
-            // cmbTelefonoActProfesor
-            // 
-            this.cmbTelefonoActProfesor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.cmbTelefonoActProfesor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbTelefonoActProfesor.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbTelefonoActProfesor.ForeColor = System.Drawing.Color.White;
-            this.cmbTelefonoActProfesor.FormattingEnabled = true;
-            this.cmbTelefonoActProfesor.Location = new System.Drawing.Point(12, 277);
-            this.cmbTelefonoActProfesor.Name = "cmbTelefonoActProfesor";
-            this.cmbTelefonoActProfesor.Size = new System.Drawing.Size(94, 22);
-            this.cmbTelefonoActProfesor.TabIndex = 32;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.DarkGray;
-            this.panel3.Location = new System.Drawing.Point(556, 118);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(136, 2);
-            this.panel3.TabIndex = 42;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DarkGray;
-            this.panel1.Location = new System.Drawing.Point(112, 118);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(136, 2);
-            this.panel1.TabIndex = 43;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DarkGray;
-            this.panel2.Location = new System.Drawing.Point(112, 212);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(136, 2);
-            this.panel2.TabIndex = 44;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.DarkGray;
-            this.panel4.Location = new System.Drawing.Point(112, 297);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(136, 2);
-            this.panel4.TabIndex = 45;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.DarkGray;
-            this.panel5.Location = new System.Drawing.Point(112, 392);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(160, 2);
-            this.panel5.TabIndex = 46;
-            // 
-            // btnActualizarPro
-            // 
-            this.btnActualizarPro.BackColor = System.Drawing.Color.DarkGray;
-            this.btnActualizarPro.FlatAppearance.BorderSize = 0;
-            this.btnActualizarPro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActualizarPro.Font = new System.Drawing.Font("Roboto SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarPro.ForeColor = System.Drawing.Color.White;
-            this.btnActualizarPro.Location = new System.Drawing.Point(556, 288);
-            this.btnActualizarPro.Name = "btnActualizarPro";
-            this.btnActualizarPro.Size = new System.Drawing.Size(78, 23);
-            this.btnActualizarPro.TabIndex = 40;
-            this.btnActualizarPro.Text = "Actualizar";
-            this.btnActualizarPro.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_dinero;
-            this.pictureBox5.Location = new System.Drawing.Point(662, 91);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(30, 26);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 55;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_correo;
-            this.pictureBox4.Location = new System.Drawing.Point(246, 365);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 54;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_telefono;
-            this.pictureBox3.Location = new System.Drawing.Point(222, 270);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 53;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_apellido;
-            this.pictureBox1.Location = new System.Drawing.Point(218, 186);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 52;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_nombre;
-            this.pictureBox2.Location = new System.Drawing.Point(222, 91);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 51;
-            this.pictureBox2.TabStop = false;
+            this.clbEspecialidadesActProfe.Location = new System.Drawing.Point(416, 129);
+            this.clbEspecialidadesActProfe.Name = "clbEspecialidadesActProfe";
+            this.clbEspecialidadesActProfe.Size = new System.Drawing.Size(256, 357);
+            this.clbEspecialidadesActProfe.TabIndex = 58;
             // 
             // ActualizarProfesor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.clbEspecialidadesActProfe);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -384,7 +408,6 @@
             this.Controls.Add(this.lblEstadoActProfe);
             this.Controls.Add(this.chkEstadoActProfe);
             this.Controls.Add(this.txtTarifaActProfe);
-            this.Controls.Add(this.cmbEspecialidadActProfe);
             this.Controls.Add(this.txtEmailActProfe);
             this.Controls.Add(this.txtTelefonoActProfe);
             this.Controls.Add(this.txtApellidoActProfe);
@@ -396,6 +419,7 @@
             this.Controls.Add(this.lblApellidoActProfe);
             this.Controls.Add(this.lblNombreActProfe);
             this.ForeColor = System.Drawing.Color.White;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ActualizarProfesor";
             this.Text = "ActualizarProfesor";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -420,7 +444,6 @@
         private System.Windows.Forms.TextBox txtApellidoActProfe;
         private System.Windows.Forms.TextBox txtTelefonoActProfe;
         private System.Windows.Forms.TextBox txtEmailActProfe;
-        private System.Windows.Forms.ComboBox cmbEspecialidadActProfe;
         private System.Windows.Forms.TextBox txtTarifaActProfe;
         private System.Windows.Forms.CheckBox chkEstadoActProfe;
         private System.Windows.Forms.Label lblEstadoActProfe;
@@ -437,5 +460,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.CheckedListBox clbEspecialidadesActProfe;
     }
 }

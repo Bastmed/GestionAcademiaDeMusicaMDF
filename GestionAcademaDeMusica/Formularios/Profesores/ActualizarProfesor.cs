@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
@@ -34,11 +36,21 @@ namespace GestionAcademaDeMusica.Formularios.Profesores
             txtNombreActProfe.Text = _profesor.NombreProfesor;
             txtApellidoActProfe.Text = _profesor.ApellidoProfesor;
             txtEmailActProfe.Text = _profesor.EmailProfesor;
-            cmbEspecialidadActProfe.Text = _profesor.Especialidad;
             txtTarifaActProfe.Text = _profesor.TarifaHora.ToString();
             chkEstadoActProfe.Checked = _profesor.ActivoProfesor;
 
-            // Separar prefijo y número del teléfono guardado
+            if (!string.IsNullOrEmpty(_profesor.Especialidad))
+            {
+                var listaEspecialidades = _profesor.Especialidad.Split(new[] { ", " }, StringSplitOptions.None);
+                for (int i = 0; i < clbEspecialidadesActProfe.Items.Count; i++)
+                {
+                    if (listaEspecialidades.Contains(clbEspecialidadesActProfe.Items[i].ToString()))
+                    {
+                        clbEspecialidadesActProfe.SetItemChecked(i, true);
+                    }
+                }
+            }
+
             if (!string.IsNullOrWhiteSpace(_profesor.TelefonoProfesor))
             {
                 string[] partes = _profesor.TelefonoProfesor.Split(new char[] { ' ' }, 2);
@@ -122,11 +134,25 @@ namespace GestionAcademaDeMusica.Formularios.Profesores
                 telefonoFinal = prefijo + " " + txtTelefonoActProfe.Text.Trim();
             }
 
+            List<string> especialidadesSeleccionadas = new List<string>();
+            foreach (var item in clbEspecialidadesActProfe.CheckedItems)
+            {
+                especialidadesSeleccionadas.Add(item.ToString());
+            }
+
+            if (especialidadesSeleccionadas.Count == 0)
+            {
+                MessageBox.Show("Debe seleccionar al menos una especialidad.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string especialidadesUnidas = string.Join(", ", especialidadesSeleccionadas);
+
             _profesor.NombreProfesor = txtNombreActProfe.Text.Trim();
             _profesor.ApellidoProfesor = txtApellidoActProfe.Text.Trim();
             _profesor.TelefonoProfesor = telefonoFinal;
             _profesor.EmailProfesor = txtEmailActProfe.Text.Trim();
-            _profesor.Especialidad = cmbEspecialidadActProfe.Text.Trim();
+            _profesor.Especialidad = especialidadesUnidas; 
             _profesor.TarifaHora = tarifa;
             _profesor.ActivoProfesor = chkEstadoActProfe.Checked;
 
@@ -144,6 +170,5 @@ namespace GestionAcademaDeMusica.Formularios.Profesores
         }
 
         private void lblTarifaIVA_Click(object sender, EventArgs e) { }
-
     }
 }
