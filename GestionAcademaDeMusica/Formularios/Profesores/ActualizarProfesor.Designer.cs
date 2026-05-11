@@ -140,6 +140,7 @@
             this.txtNombreActProfe.Name = "txtNombreActProfe";
             this.txtNombreActProfe.Size = new System.Drawing.Size(133, 17);
             this.txtNombreActProfe.TabIndex = 6;
+            this.txtNombreActProfe.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreActProfe_KeyPress);
             // 
             // txtApellidoActProfe
             // 
@@ -152,6 +153,7 @@
             this.txtApellidoActProfe.Name = "txtApellidoActProfe";
             this.txtApellidoActProfe.Size = new System.Drawing.Size(133, 17);
             this.txtApellidoActProfe.TabIndex = 7;
+            this.txtApellidoActProfe.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellidoActProfe_KeyPress);
             // 
             // txtTelefonoActProfe
             // 
@@ -164,6 +166,7 @@
             this.txtTelefonoActProfe.Name = "txtTelefonoActProfe";
             this.txtTelefonoActProfe.Size = new System.Drawing.Size(133, 17);
             this.txtTelefonoActProfe.TabIndex = 8;
+            this.txtTelefonoActProfe.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefonoActProfe_KeyPress);
             // 
             // txtEmailActProfe
             // 
@@ -189,6 +192,7 @@
             this.txtTarifaActProfe.Size = new System.Drawing.Size(133, 17);
             this.txtTarifaActProfe.TabIndex = 41;
             this.txtTarifaActProfe.TextChanged += new System.EventHandler(this.txtTarifaActProfe_TextChanged);
+            this.txtTarifaActProfe.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTarifaActProfe_KeyPress);
             // 
             // chkEstadoActProfe
             // 
