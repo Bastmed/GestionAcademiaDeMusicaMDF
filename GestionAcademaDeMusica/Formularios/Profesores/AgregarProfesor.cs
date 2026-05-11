@@ -23,6 +23,8 @@ namespace GestionAcademaDeMusica.Formularios.Profesores
             InitializeComponent();
             btnRegistrarPro.Click += btnRegistrarProfe_Click;
 
+            clbEspecialidadesAgrProfe.ItemCheck += clbEspecialidadesAgrProfe_ItemCheck;
+
             cmbTelefonoAgrProfesor.Items.AddRange(PrefijosLatam);
             cmbTelefonoAgrProfesor.SelectedIndex = 3; // Chile por defecto
         }
@@ -155,7 +157,7 @@ namespace GestionAcademaDeMusica.Formularios.Profesores
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
-                e.Handled = true; 
+                e.Handled = true;
             }
         }
 
