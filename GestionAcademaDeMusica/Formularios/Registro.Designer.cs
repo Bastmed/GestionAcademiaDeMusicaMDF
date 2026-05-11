@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.picOjo = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnVolver = new System.Windows.Forms.Button();
             this.btnRegistro = new System.Windows.Forms.Button();
             this.lblRegistro = new System.Windows.Forms.Label();
@@ -39,13 +42,10 @@
             this.txtNombreUsuario = new System.Windows.Forms.TextBox();
             this.lblContraseñaUsuario = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.picOjo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picOjo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -69,6 +69,37 @@
             this.panel1.Size = new System.Drawing.Size(763, 341);
             this.panel1.TabIndex = 0;
             // 
+            // picOjo
+            // 
+            this.picOjo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picOjo.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_ojo;
+            this.picOjo.Location = new System.Drawing.Point(649, 190);
+            this.picOjo.Name = "picOjo";
+            this.picOjo.Size = new System.Drawing.Size(26, 20);
+            this.picOjo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picOjo.TabIndex = 29;
+            this.picOjo.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_nombre;
+            this.pictureBox3.Location = new System.Drawing.Point(649, 120);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 28;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_registro;
+            this.pictureBox1.Location = new System.Drawing.Point(44, 71);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(150, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnVolver
             // 
             this.btnVolver.BackColor = System.Drawing.Color.Indigo;
@@ -84,6 +115,7 @@
             this.btnVolver.TabIndex = 18;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // btnRegistro
             // 
@@ -100,6 +132,7 @@
             this.btnRegistro.TabIndex = 17;
             this.btnRegistro.Text = "Registrar";
             this.btnRegistro.UseVisualStyleBackColor = false;
+            this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
             // 
             // lblRegistro
             // 
@@ -185,37 +218,6 @@
             this.panel2.Size = new System.Drawing.Size(5, 341);
             this.panel2.TabIndex = 2;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_registro;
-            this.pictureBox1.Location = new System.Drawing.Point(44, 71);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_nombre;
-            this.pictureBox3.Location = new System.Drawing.Point(649, 120);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 28;
-            this.pictureBox3.TabStop = false;
-            // 
-            // picOjo
-            // 
-            this.picOjo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picOjo.Image = global::GestionAcademaDeMusica.Properties.Resources.icono_ojo;
-            this.picOjo.Location = new System.Drawing.Point(649, 190);
-            this.picOjo.Name = "picOjo";
-            this.picOjo.Size = new System.Drawing.Size(26, 20);
-            this.picOjo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picOjo.TabIndex = 29;
-            this.picOjo.TabStop = false;
-            // 
             // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,9 +230,9 @@
             this.Load += new System.EventHandler(this.Registro_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picOjo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

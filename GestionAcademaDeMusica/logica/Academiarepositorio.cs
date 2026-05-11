@@ -341,5 +341,58 @@ namespace GestionAcademaDeMusica
                 }
             }
         }
+        public void AgregarUsuario(Usuario u)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    con.Open();
+                    string query = "INSERT INTO Usuarios (NombreUsuario, Contrasena) VALUES (@Nombre, @Contrasena)";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@Nombre", u.NombreUsuario);
+                        cmd.Parameters.AddWithValue("@Contrasena", u.ContraseñaUsuario);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    System.Windows.Forms.MessageBox.Show("Error al agregar usuario: " + ex.Message);
+                }
+            }
+        }
+        public Usuario ValidarUsuario(string nombre, string contrasena)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    con.Open();
+                    string query = "SELECT IdUsuario, NombreUsuario FROM Usuarios WHERE NombreUsuario = @Nombre AND Contrasena = @Contrasena";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@Nombre", nombre);
+                        cmd.Parameters.AddWithValue("@Contrasena", contrasena);
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                return new Usuario
+                                {
+                                    IdUsuario = (int)reader["IdUsuario"],
+                                    NombreUsuario = reader["NombreUsuario"].ToString()
+                                };
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    System.Windows.Forms.MessageBox.Show("Error al validar usuario: " + ex.Message);
+                }
+            }
+            return null;
+        }
     }
 }

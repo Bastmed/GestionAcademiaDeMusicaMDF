@@ -13,6 +13,7 @@ namespace GestionAcademaDeMusica.Formularios
 {
     public partial class InicioSesion : Form
     {
+        private readonly AcademiaRepositorio _repo = new AcademiaRepositorio();
         public InicioSesion()
         {
             InitializeComponent();
@@ -31,19 +32,20 @@ namespace GestionAcademaDeMusica.Formularios
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            String usuario = "webo";
-            String contraseña = "123";
+            Usuario usuario = _repo.ValidarUsuario(txtNombreUsuario.Text, txtContraseñaUsuario.Text);
 
-            if (txtNombreUsuario.Text == usuario && txtContraseñaUsuario.Text == contraseña)
+            if (usuario != null)
             {
-                MessageBox.Show("¡Inicio de sesión exitoso!");
-                MenuPrincipal form2 = new MenuPrincipal();
-                form2.Show();
+                MenuPrincipal menu = new MenuPrincipal(usuario.NombreUsuario);
+                MessageBox.Show($"Inicio de sesión exitoso, Bienvenido {usuario.NombreUsuario}");
+                menu.Show();
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrectos. Inténtalo de nuevo.");
+                MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNombreUsuario.Clear();
+                txtContraseñaUsuario.Clear();
             }
         }
 

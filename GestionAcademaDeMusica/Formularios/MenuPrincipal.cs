@@ -16,7 +16,7 @@ namespace GestionAcademaDeMusica.Formularios
         private UCAlumnos ucAlumnos = new UCAlumnos();
         private UCInstrumentos ucInstrumentos = new UCInstrumentos();
         private UCProfesores ucProfesores = new UCProfesores();
-        public MenuPrincipal()
+        public MenuPrincipal(string nombreUsuario)
         {
             InitializeComponent();
             InicializarPaneles();
