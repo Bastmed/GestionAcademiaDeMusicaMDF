@@ -170,5 +170,18 @@ namespace GestionAcademaDeMusica.Formularios.Profesores
         }
 
         private void lblTarifaIVA_Click(object sender, EventArgs e) { }
+
+        private void clbEspecialidadesActProfe_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            if (e.NewValue == CheckState.Checked)
+            {
+                if (clbEspecialidadesActProfe.CheckedItems.Count >= 7)
+                {
+                    MessageBox.Show("Un profesor no puede tener más de 7 especialidades.", "Límite alcanzado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    e.NewValue = CheckState.Unchecked;
+                }
+            }
+        }
     }
 }

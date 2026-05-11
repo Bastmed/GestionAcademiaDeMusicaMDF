@@ -125,5 +125,17 @@ namespace GestionAcademaDeMusica.Formularios.Profesores
             else
                 lblTarifaIVA.Text = "Con IVA (19%): $0";
         }
+
+        private void clbEspecialidadesAgrProfe_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            if (e.NewValue == CheckState.Checked)
+            {
+                if (clbEspecialidadesAgrProfe.CheckedItems.Count >= 7)
+                {
+                    MessageBox.Show("Ya has alcanzado el máximo de 7 especialidades permitidas.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    e.NewValue = CheckState.Unchecked;
+                }
+            }
+        }
     }
 }

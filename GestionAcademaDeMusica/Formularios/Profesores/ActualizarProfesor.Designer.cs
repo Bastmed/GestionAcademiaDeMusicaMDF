@@ -55,6 +55,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.clbEspecialidadesActProfe = new System.Windows.Forms.CheckedListBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -384,6 +385,16 @@
             this.clbEspecialidadesActProfe.Name = "clbEspecialidadesActProfe";
             this.clbEspecialidadesActProfe.Size = new System.Drawing.Size(256, 357);
             this.clbEspecialidadesActProfe.TabIndex = 58;
+            this.clbEspecialidadesActProfe.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.clbEspecialidadesActProfe_ItemCheck);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(515, 93);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(150, 16);
+            this.label1.TabIndex = 59;
+            this.label1.Text = "(Máx. 7 especialidades)";
             // 
             // ActualizarProfesor
             // 
@@ -391,6 +402,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.clbEspecialidadesActProfe);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -461,5 +473,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.CheckedListBox clbEspecialidadesActProfe;
+        private System.Windows.Forms.Label label1;
     }
 }
