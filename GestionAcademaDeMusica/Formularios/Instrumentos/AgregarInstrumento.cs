@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GestionAcademaDeMusica
@@ -13,6 +6,7 @@ namespace GestionAcademaDeMusica
     public partial class AgregarInstrumento : Form
     {
         private AcademiaRepositorio _repo = new AcademiaRepositorio();
+
         public AgregarInstrumento()
         {
             InitializeComponent();
@@ -20,9 +14,27 @@ namespace GestionAcademaDeMusica
 
         private void btnGuar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtNombreInstrumento.Text) || string.IsNullOrWhiteSpace(txtMarcaInstrumento.Text))
+            if (string.IsNullOrWhiteSpace(txtNombreInstrumento.Text))
             {
-                MessageBox.Show("El nombre y la marca son obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("El nombre es obligatorio.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtMarcaInstrumento.Text))
+            {
+                MessageBox.Show("La marca es obligatoria.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (cmbCategoriaInstrumento.SelectedIndex == -1)
+            {
+                MessageBox.Show("Debes seleccionar una categoría.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (cmbEstadoInstrumento.SelectedIndex == -1)
+            {
+                MessageBox.Show("Debes seleccionar un estado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -30,8 +42,8 @@ namespace GestionAcademaDeMusica
             {
                 NombreInstrumento = txtNombreInstrumento.Text.Trim(),
                 Marca = txtMarcaInstrumento.Text.Trim(),
-                Categoria = cmbCategoriaInstrumento.SelectedItem?.ToString(),
-                Estado = cmbEstadoInstrumento.SelectedItem?.ToString()
+                Categoria = cmbCategoriaInstrumento.SelectedItem.ToString(),
+                Estado = cmbEstadoInstrumento.SelectedItem.ToString()
             };
 
             _repo.AgregarInstrumento(nuevoInstrumento);

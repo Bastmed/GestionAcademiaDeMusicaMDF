@@ -1,12 +1,6 @@
 ﻿using GestionAcademaDeMusica.Formularios.Instrumentos;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GestionAcademaDeMusica.Formularios.UserControls
@@ -14,6 +8,7 @@ namespace GestionAcademaDeMusica.Formularios.UserControls
     public partial class UCInstrumentos : UserControl
     {
         private readonly AcademiaRepositorio _repo = new AcademiaRepositorio();
+
         public UCInstrumentos()
         {
             InitializeComponent();
@@ -67,7 +62,9 @@ namespace GestionAcademaDeMusica.Formularios.UserControls
             }
 
             Instrumento seleccionado = (Instrumento)dgvInstrumentos.CurrentRow.DataBoundItem;
-            DialogResult confirmacion = MessageBox.Show($"¿Estas seguro de que deseas eliminar el instrumento {seleccionado.NombreInstrumento}?", "Confirmar eliminacion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            DialogResult confirmacion = MessageBox.Show(
+                $"¿Estas seguro de que deseas eliminar el instrumento {seleccionado.NombreInstrumento}?",
+                "Confirmar eliminacion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
             if (confirmacion == DialogResult.Yes)
             {
@@ -75,13 +72,24 @@ namespace GestionAcademaDeMusica.Formularios.UserControls
                 MessageBox.Show("Instrumento eliminado correctamente.");
                 CargarDatos();
             }
-
         }
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
             string filtro = txtBuscar.Text.Trim().ToLower();
-            dgvInstrumentos.DataSource = _repo.ObtenerInstrumentos().Where(i => i.NombreInstrumento.ToLower().Contains(filtro)).ToList();
+
+            if (string.IsNullOrEmpty(filtro))
+            {
+                CargarDatos();
+                return;
+            }
+
+            dgvInstrumentos.DataSource = _repo.ObtenerInstrumentos()
+                .Where(i => i.NombreInstrumento.ToLower().Contains(filtro))
+                .ToList();
+
+            if (dgvInstrumentos.Columns.Contains("IdInstrumento"))
+                dgvInstrumentos.Columns["IdInstrumento"].Visible = false;
         }
     }
 }

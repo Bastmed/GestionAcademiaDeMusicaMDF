@@ -65,6 +65,18 @@ namespace GestionAcademaDeMusica.Formularios.Alumnos
                 return;
             }
 
+            if (string.IsNullOrWhiteSpace(txtTelefonoAlumno.Text))
+            {
+                MessageBox.Show("El teléfono es obligatorio.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtEmailAlumno.Text))
+            {
+                MessageBox.Show("El email es obligatorio.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             if (!string.IsNullOrWhiteSpace(txtEmailAlumno.Text) && !EmailValido(txtEmailAlumno.Text.Trim()))
             {
                 MessageBox.Show("El email ingresado no es válido.\nejemplo: usuario@gmail.com", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

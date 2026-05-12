@@ -12,7 +12,7 @@ namespace GestionAcademaDeMusica
         public UCProfesores()
         {
             InitializeComponent();
-            CargarDatos();
+            this.Load += UCProfesores_Load;
         }
 
         private void UCProfesores_Load(object sender, EventArgs e)
@@ -82,7 +82,19 @@ namespace GestionAcademaDeMusica
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
             string filtro = txtBuscar.Text.Trim().ToLower();
-            dgvProfesores.DataSource = _repo.ObtenerProfesores().Where(p => p.NombreProfesor.ToLower().Contains(filtro)).ToList();
+
+            if (string.IsNullOrEmpty(filtro))
+            {
+                CargarDatos();
+                return;
+            }
+
+            dgvProfesores.DataSource = _repo.ObtenerProfesores()
+                .Where(p => p.NombreProfesor.ToLower().Contains(filtro))
+                .ToList();
+
+            if (dgvProfesores.Columns.Contains("IdProfesor"))
+                dgvProfesores.Columns["IdProfesor"].Visible = false;
         }
     }
 }

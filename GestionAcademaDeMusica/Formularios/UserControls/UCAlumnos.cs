@@ -1,12 +1,6 @@
 ﻿using GestionAcademaDeMusica.Formularios.Alumnos;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GestionAcademaDeMusica.Formularios.UserControls
@@ -50,7 +44,7 @@ namespace GestionAcademaDeMusica.Formularios.UserControls
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            if(dgvAlumnos.CurrentRow == null)
+            if (dgvAlumnos.CurrentRow == null)
             {
                 MessageBox.Show("Selecciona un alumno de la tabla primero.");
                 return;
@@ -71,7 +65,9 @@ namespace GestionAcademaDeMusica.Formularios.UserControls
             }
 
             Alumno seleccionado = (Alumno)dgvAlumnos.CurrentRow.DataBoundItem;
-            DialogResult confirmacion = MessageBox.Show($"¿Estas seguro de que deseas eliminar al alumno {seleccionado.NombreAlumno} {seleccionado.ApellidoAlumno}?", "Confirmar eliminacion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            DialogResult confirmacion = MessageBox.Show(
+                $"¿Estas seguro de que deseas eliminar al alumno {seleccionado.NombreAlumno} {seleccionado.ApellidoAlumno}?",
+                "Confirmar eliminacion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
             if (confirmacion == DialogResult.Yes)
             {
@@ -84,8 +80,21 @@ namespace GestionAcademaDeMusica.Formularios.UserControls
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
             string filtro = txtBuscar.Text.Trim().ToLower();
-            dgvAlumnos.DataSource = _repo.ObtenerAlumnos().Where(a => a.NombreAlumno.ToLower().Contains(filtro)).ToList();
-        }
 
+            if (string.IsNullOrEmpty(filtro))
+            {
+                CargarDatos();
+                return;
+            }
+
+            dgvAlumnos.DataSource = _repo.ObtenerAlumnos()
+                .Where(a => a.NombreAlumno.ToLower().Contains(filtro))
+                .ToList();
+
+            if (dgvAlumnos.Columns.Contains("IdAlumno"))
+                dgvAlumnos.Columns["IdAlumno"].Visible = false;
+            if (dgvAlumnos.Columns.Contains("IdInstrumento"))
+                dgvAlumnos.Columns["IdInstrumento"].Visible = false;
+        }
     }
 }
