@@ -221,7 +221,9 @@
             this.Controls.Add(this.txtNombreInstrumento);
             this.Controls.Add(this.lblCategoriaInstrumento);
             this.Controls.Add(this.lblNombreInstrumento);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ActualizarInstrumento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ActualizarInstrumento";
             this.Load += new System.EventHandler(this.ActualizarInstrumento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

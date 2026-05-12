@@ -102,5 +102,6 @@ namespace GestionAcademaDeMusica.Formularios.Alumnos
             MessageBox.Show("Alumno agregado exitosamente.");
             this.Close();
         }
+
     }
 }

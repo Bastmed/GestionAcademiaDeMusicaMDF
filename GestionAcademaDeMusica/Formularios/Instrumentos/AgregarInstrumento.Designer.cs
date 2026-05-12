@@ -223,7 +223,9 @@
             this.Controls.Add(this.txtNombreInstrumento);
             this.Controls.Add(this.lblCategoriaInstrumento);
             this.Controls.Add(this.lblNombreInstrumento);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "AgregarInstrumento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Instrumento";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

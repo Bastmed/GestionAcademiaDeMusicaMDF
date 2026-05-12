@@ -16,10 +16,12 @@ namespace GestionAcademaDeMusica.Formularios
         private UCAlumnos ucAlumnos = new UCAlumnos();
         private UCInstrumentos ucInstrumentos = new UCInstrumentos();
         private UCProfesores ucProfesores = new UCProfesores();
+        private readonly AcademiaRepositorio _repo = new AcademiaRepositorio();
         public MenuPrincipal(string nombreUsuario)
         {
             InitializeComponent();
             InicializarPaneles();
+            lblUsuario.Text = "Usuario: " + nombreUsuario;
         }
 
         private void InicializarPaneles()
@@ -50,6 +52,21 @@ namespace GestionAcademaDeMusica.Formularios
             MostrarPanel(ucProfesores);
         }
 
-        
+        private void MenuPrincipal_Load(object sender, EventArgs e)
+        {
+            lblFecha.Text = "Fecha: " + DateTime.Now.ToString("dd/MM/yyyy");
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            DialogResult confirmacion = MessageBox.Show($"¿Deseas cerrar sesión con el {lblUsuario.Text}?", "Cerrar sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (confirmacion == DialogResult.Yes)
+            {
+                InicioSesion login = new InicioSesion();
+                login.Show();
+                this.Close();
+            }
+        }
     }
 }

@@ -45,6 +45,7 @@
             this.lblInicioSesion = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.pnlContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picOjo)).BeginInit();
@@ -187,6 +188,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Controls.Add(this.linklblRegistro);
             this.panel1.Controls.Add(this.lblRegistrar);
             this.panel1.Controls.Add(this.lblInicioSesion);
@@ -202,7 +204,7 @@
             this.linklblRegistro.AutoSize = true;
             this.linklblRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linklblRegistro.LinkColor = System.Drawing.Color.Violet;
-            this.linklblRegistro.Location = new System.Drawing.Point(179, 315);
+            this.linklblRegistro.Location = new System.Drawing.Point(185, 314);
             this.linklblRegistro.Name = "linklblRegistro";
             this.linklblRegistro.Size = new System.Drawing.Size(100, 19);
             this.linklblRegistro.TabIndex = 3;
@@ -216,7 +218,7 @@
             this.lblRegistrar.AutoSize = true;
             this.lblRegistrar.Font = new System.Drawing.Font("Roboto SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRegistrar.ForeColor = System.Drawing.Color.White;
-            this.lblRegistrar.Location = new System.Drawing.Point(35, 319);
+            this.lblRegistrar.Location = new System.Drawing.Point(41, 318);
             this.lblRegistrar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRegistrar.Name = "lblRegistrar";
             this.lblRegistrar.Size = new System.Drawing.Size(137, 15);
@@ -251,6 +253,23 @@
             this.panel2.Size = new System.Drawing.Size(5, 414);
             this.panel2.TabIndex = 1;
             // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.Firebrick;
+            this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Roboto SemiCondensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.White;
+            this.btnSalir.Location = new System.Drawing.Point(114, 361);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(80, 27);
+            this.btnSalir.TabIndex = 6;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // InicioSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
@@ -262,8 +281,10 @@
             this.Controls.Add(this.pnlContenedor);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "InicioSesion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InicioSesion";
             this.Load += new System.EventHandler(this.InicioSesion_Load);
             this.pnlContenedor.ResumeLayout(false);
@@ -296,5 +317,6 @@
         private System.Windows.Forms.Label lblRegistrar;
         private System.Windows.Forms.LinkLabel linklblRegistro;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

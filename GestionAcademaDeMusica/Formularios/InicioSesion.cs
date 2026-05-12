@@ -65,6 +65,15 @@ namespace GestionAcademaDeMusica.Formularios
             formRegistro.ShowDialog();
         }
 
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            DialogResult confirmacion = MessageBox.Show($"¿Deseas salir de la aplicación?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+
+            if (confirmacion == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 
 }

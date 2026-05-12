@@ -341,7 +341,9 @@
             this.Controls.Add(this.txtNombreAlumno);
             this.Controls.Add(this.lblApellidoAlumno);
             this.Controls.Add(this.lblNombreAlumno);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ActualizarAlumno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ActualizarAlumno";
             this.Load += new System.EventHandler(this.ActualizarAlumno_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

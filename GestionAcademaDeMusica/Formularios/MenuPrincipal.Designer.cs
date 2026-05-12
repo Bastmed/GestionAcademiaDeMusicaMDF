@@ -31,8 +31,8 @@
             this.btnInstrumentos = new System.Windows.Forms.Button();
             this.btnProfesores = new System.Windows.Forms.Button();
             this.pnlSuperior = new System.Windows.Forms.Panel();
-            this.lblSubSubtitulo = new System.Windows.Forms.Label();
-            this.lblSubtitulo = new System.Windows.Forms.Label();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlIzquierdo = new System.Windows.Forms.Panel();
@@ -42,6 +42,8 @@
             this.btn = new System.Windows.Forms.Button();
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.picMenuKongeEgg = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.pnlSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlIzquierdo.SuspendLayout();
@@ -85,8 +87,8 @@
             // 
             // pnlSuperior
             // 
-            this.pnlSuperior.Controls.Add(this.lblSubSubtitulo);
-            this.pnlSuperior.Controls.Add(this.lblSubtitulo);
+            this.pnlSuperior.Controls.Add(this.lblFecha);
+            this.pnlSuperior.Controls.Add(this.lblUsuario);
             this.pnlSuperior.Controls.Add(this.lblTitulo);
             this.pnlSuperior.Controls.Add(this.pictureBox1);
             this.pnlSuperior.Dock = System.Windows.Forms.DockStyle.Top;
@@ -95,34 +97,34 @@
             this.pnlSuperior.Size = new System.Drawing.Size(1104, 127);
             this.pnlSuperior.TabIndex = 3;
             // 
-            // lblSubSubtitulo
+            // lblFecha
             // 
-            this.lblSubSubtitulo.AutoSize = true;
-            this.lblSubSubtitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubSubtitulo.ForeColor = System.Drawing.Color.White;
-            this.lblSubSubtitulo.Location = new System.Drawing.Point(213, 73);
-            this.lblSubSubtitulo.Name = "lblSubSubtitulo";
-            this.lblSubSubtitulo.Size = new System.Drawing.Size(59, 18);
-            this.lblSubSubtitulo.TabIndex = 3;
-            this.lblSubSubtitulo.Text = "Fecha:";
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.ForeColor = System.Drawing.Color.White;
+            this.lblFecha.Location = new System.Drawing.Point(213, 73);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(59, 18);
+            this.lblFecha.TabIndex = 3;
+            this.lblFecha.Text = "Fecha:";
             // 
-            // lblSubtitulo
+            // lblUsuario
             // 
-            this.lblSubtitulo.AutoSize = true;
-            this.lblSubtitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubtitulo.ForeColor = System.Drawing.Color.White;
-            this.lblSubtitulo.Location = new System.Drawing.Point(213, 44);
-            this.lblSubtitulo.Name = "lblSubtitulo";
-            this.lblSubtitulo.Size = new System.Drawing.Size(76, 20);
-            this.lblSubtitulo.TabIndex = 2;
-            this.lblSubtitulo.Text = "Usuario:";
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.Color.White;
+            this.lblUsuario.Location = new System.Drawing.Point(212, 44);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(76, 20);
+            this.lblUsuario.TabIndex = 2;
+            this.lblUsuario.Text = "Usuario:";
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(213, 12);
+            this.lblTitulo.Location = new System.Drawing.Point(212, 12);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(410, 24);
             this.lblTitulo.TabIndex = 1;
@@ -140,6 +142,8 @@
             // 
             // pnlIzquierdo
             // 
+            this.pnlIzquierdo.Controls.Add(this.panel1);
+            this.pnlIzquierdo.Controls.Add(this.btnCerrarSesion);
             this.pnlIzquierdo.Controls.Add(this.pnlAlumnos);
             this.pnlIzquierdo.Controls.Add(this.pnlInstrumentos);
             this.pnlIzquierdo.Controls.Add(this.pnlProfesores);
@@ -212,6 +216,31 @@
             this.picMenuKongeEgg.TabIndex = 0;
             this.picMenuKongeEgg.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Firebrick;
+            this.panel1.Location = new System.Drawing.Point(0, 441);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(10, 31);
+            this.panel1.TabIndex = 3;
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.btnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrarSesion.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
+            this.btnCerrarSesion.FlatAppearance.BorderSize = 2;
+            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(16, 441);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(102, 31);
+            this.btnCerrarSesion.TabIndex = 4;
+            this.btnCerrarSesion.Text = "Cerrar sesion";
+            this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -221,8 +250,11 @@
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.pnlIzquierdo);
             this.Controls.Add(this.pnlSuperior);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuPrincipal";
+            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.pnlSuperior.ResumeLayout(false);
             this.pnlSuperior.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -246,7 +278,9 @@
         private System.Windows.Forms.Button btn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Label lblSubSubtitulo;
-        private System.Windows.Forms.Label lblSubtitulo;
+        private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnCerrarSesion;
     }
 }
